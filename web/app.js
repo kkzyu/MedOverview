@@ -32,11 +32,52 @@ function tokenize(text) {
   const out = [];
   // 1) ASCII words/numbers
   for (const m of s.matchAll(/[a-z0-9_]+/g)) out.push(m[0]);
-  // 2) CJK chars (粗粒度，但足够应付 200~300 篇规模)
-  for (const ch of s) {
-    if (/\p{Script=Han}/u.test(ch)) out.push(ch);
+  // 2) Han tokens
+  // Single-char Han tokens are very noisy (e.g. “分” appears everywhere in Chinese summaries).
+  // Use bigrams within continuous Han spans, with a light fallback for single chars.
+  const hanSpans = s.match(/\p{Script=Han}+/gu) || [];
+  for (const span of hanSpans) {
+    if (span.length === 1) {
+      out.push(span);
+      continue;
+    }
+    // bigrams
+    for (let i = 0; i + 1 < span.length; i++) out.push(span.slice(i, i + 2));
+    // short whole-span token helps exact matching for very short queries like “分割”
+    if (span.length <= 4) out.push(span);
   }
   return out;
+}
+
+function expandQueryForRetrieval(q) {
+  const s = String(q || "").trim();
+  if (!s) return s;
+
+  // If the query is mostly Chinese, add a small bilingual synonym set so that
+  // English-only titles/abstracts can still be retrieved.
+  const hasAsciiWord = /[a-z0-9_]{2,}/i.test(s);
+  const hasHan = /\p{Script=Han}/u.test(s);
+  let extra = [];
+
+  // segmentation
+  if (/分割|分割任务|语义分割|实例分割|掩膜|轮廓|勾画|mask/i.test(s)) {
+    extra.push("segmentation segment mask masked dice iou unet u-net sam \"segment anything\"");
+  }
+  // detection (optional)
+  if (/检测|检出|定位|detection|detect/i.test(s)) {
+    extra.push("detection detect localization lesion nodule");
+  }
+  // classification (optional)
+  if (/分类|分型|classification|classify/i.test(s)) {
+    extra.push("classification classify diagnosis");
+  }
+
+  if (hasHan && !hasAsciiWord && extra.length) {
+    return `${s} ${extra.join(" ")}`.trim();
+  }
+  // Even if the user typed English already, still append expansions when matched.
+  if (extra.length) return `${s} ${extra.join(" ")}`.trim();
+  return s;
 }
 
 function buildPaperDocText(p) {
@@ -586,7 +627,8 @@ async function main() {
     setRagAnswerText("");
     setRagCitations([]);
 
-    const retrieved = bm25.search(question, { allowedIds: currentPaperIds, topK: RAG_DEFAULTS.topK });
+    const retrievalQuery = expandQueryForRetrieval(question);
+    const retrieved = bm25.search(retrievalQuery, { allowedIds: currentPaperIds, topK: RAG_DEFAULTS.topK });
     const contexts = retrieved
       .map((x) => {
         const p = paperIndex.get(x.id);

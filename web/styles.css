@@ -145,7 +145,7 @@ select {
   gap: 12px;
   padding: 16px;
   /* Taller than one viewport if needed, but still constrained so panels can scroll internally. */
-  height: max(600px, calc(100vh - 160px));
+  height: max(520px, calc(100vh - 160px));
   min-height: 0;
 }
 
