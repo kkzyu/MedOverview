@@ -1,0 +1,54 @@
+{
+  "version": "2026-02-01",
+  "notes": "Two-level clinical workflow taxonomy for labeling medical ML papers. L1 is a broad stage, L2 is a finer sub-stage. Papers may have multiple labels.",
+  "l1": {
+    "Screening": {
+      "desc": "Population screening, early detection, triage-like screening in non-clinical settings",
+      "l2": ["Risk screening", "Early detection", "Public screening workflow"]
+    },
+    "Diagnosis": {
+      "desc": "Clinical diagnosis and differential diagnosis; supporting clinician decision-making",
+      "l2": ["Symptom assessment", "Differential diagnosis", "Decision support", "Clinical QA"]
+    },
+    "Triage": {
+      "desc": "Prioritization and routing: urgency, referral, escalation, resource allocation",
+      "l2": ["Severity scoring", "Referral routing", "Emergency triage", "Resource allocation"]
+    },
+    "Treatment": {
+      "desc": "Treatment selection, planning, personalization, dosing, and therapy optimization",
+      "l2": ["Therapy selection", "Treatment planning", "Personalized treatment", "Dose optimization"]
+    },
+    "Monitoring": {
+      "desc": "Continuous monitoring, follow-up, ICU/ward monitoring, wearable sensing",
+      "l2": ["ICU monitoring", "Chronic follow-up", "Remote monitoring", "Adverse event detection"]
+    },
+    "Prognosis": {
+      "desc": "Outcome prediction: survival, complications, readmission, progression",
+      "l2": ["Survival / time-to-event", "Complication risk", "Disease progression", "Readmission risk"]
+    },
+    "Rehabilitation": {
+      "desc": "Rehab planning, recovery tracking, functional outcome prediction",
+      "l2": ["Rehab planning", "Recovery assessment", "Functional scoring"]
+    },
+    "Workflow": {
+      "desc": "Clinical operations: documentation, scheduling, coding, reporting, quality improvement",
+      "l2": ["Clinical documentation", "Medical coding", "Reporting", "Quality & safety"]
+    },
+    "DrugDiscovery": {
+      "desc": "Drug discovery, molecule generation, target identification; pre-clinical",
+      "l2": ["Molecule generation", "Target identification", "Drug response", "Biomarker discovery"]
+    },
+    "ImagingPipeline": {
+      "desc": "Imaging pipeline stage: acquisition, reconstruction, detection, segmentation, reporting",
+      "l2": ["Reconstruction", "Detection", "Segmentation", "Report generation", "VQA"]
+    },
+    "DataInfra": {
+      "desc": "Data standardization, privacy, evaluation, benchmarking, foundation models for medical data",
+      "l2": ["Data standard", "Privacy", "Benchmark / evaluation", "Foundation models"]
+    },
+    "Other": {
+      "desc": "Does not fit above stages",
+      "l2": ["Other"]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical 2024-2025 Topic Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">Medical 2024-2025 · ICLR/ICML/NeurIPS</div>
+      <!-- <div class="subtitle">Sankey 主题关系（双击节点展开/收起子主题，单击查看论文）</div> -->
+    </header>
+
+    <div class="toolbar">
+      <div class="fixed-cols" aria-label="固定三列">
+        <div class="fixed-col"><span class="fixed-k">列1</span><span class="pill" id="col0label">stage</span></div>
+        <div class="fixed-col"><span class="fixed-k">列2</span><span class="pill" id="col1label">method</span></div>
+        <div class="fixed-col"><span class="fixed-k">列3</span><span class="pill" id="col2label">result</span></div>
+      </div>
+      <div class="divider"></div>
+      <!-- <div class="toggle" id="dictToggleWrap">
+        <label class="toggle-label">
+          <input id="toggleDict" type="checkbox" />
+          启用字典视图
+        </label>
+        <span class="help" title="字典视图会把 method/result 的簇名归一到固定的 8-12 类“方法/结果类型”目录，便于汇报展示；不会覆盖原始 LLM 标签，可随时切回。">?</span>
+      </div> -->
+      <button id="collapse0" class="btn btn-small" title="收起列1展开">列1回退</button>
+      <button id="collapse1" class="btn btn-small" title="收起列2展开">列2回退</button>
+      <button id="collapse2" class="btn btn-small" title="收起列3展开">列3回退</button>
+      <button id="reset" class="btn">重置展开</button>
+      <div class="spacer"></div>
+      <input id="search" class="search" placeholder="在当前论文列表中搜索标题/关键词" />
+    </div>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-title">关系视图</div>
+        <div id="chart" class="chart"></div>
+        <div id="hint" class="hint"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-title">细节视图</div>
+        <div id="detailsHint" class="details-hint"></div>
+        <div id="details" class="details"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div id="footerCounts" class="footer-text"></div>
+      <!-- <div class="footer-text muted">提示：双击 L1 节点进入子主题；点击“列X回退”返回上一级；点击节点/连线可过滤右侧论文列表。</div> -->
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

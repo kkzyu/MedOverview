@@ -1,0 +1,465 @@
+{
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "years": [
+    2024,
+    2025
+  ],
+  "min_cluster_size_l1": 10,
+  "min_samples_l1": 2,
+  "min_cluster_size_l2": 5,
+  "min_samples_l2": 2,
+  "counts": {
+    "papers": 247
+  },
+  "dimensions": {
+    "keywords": {
+      "l1": {
+        "0": {
+          "id": 0,
+          "label": "医学图像分割 / 医学影像 / 电子健康记录 / 扩散模型",
+          "size": 119,
+          "example_paper_ids": [
+            "af8c55fc2338",
+            "de94191095a6",
+            "a51c369d9384",
+            "3ddd8b7d04ec",
+            "6e5bb5535c7d"
+          ]
+        },
+        "1": {
+          "id": 1,
+          "label": "合成数据 / 大型语言模型 / 检索增强生成 / 电子健康记录",
+          "size": 65,
+          "example_paper_ids": [
+            "56d626d45cda",
+            "1da25b777b31",
+            "58b6c125547b",
+            "6365fd9f4b36",
+            "03cb08a55e50"
+          ]
+        },
+        "2": {
+          "id": 2,
+          "label": "可解释性 / 胸部X光 / 多模态大语言模型 / 医学视觉问答",
+          "size": 63,
+          "example_paper_ids": [
+            "fc1d508739de",
+            "807037447531",
+            "d86b1e6c17fb",
+            "31317d0c8eb9",
+            "b0cb0b995a81"
+          ]
+        }
+      },
+      "l2": {
+        "0": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 119,
+            "example_paper_ids": [
+              "af8c55fc2338",
+              "de94191095a6",
+              "a51c369d9384",
+              "3ddd8b7d04ec",
+              "6e5bb5535c7d"
+            ]
+          }
+        },
+        "1": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 65,
+            "example_paper_ids": [
+              "56d626d45cda",
+              "1da25b777b31",
+              "58b6c125547b",
+              "6365fd9f4b36",
+              "03cb08a55e50"
+            ]
+          }
+        },
+        "2": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 63,
+            "example_paper_ids": [
+              "fc1d508739de",
+              "807037447531",
+              "d86b1e6c17fb",
+              "31317d0c8eb9",
+              "b0cb0b995a81"
+            ]
+          }
+        }
+      }
+    },
+    "method": {
+      "l1": {
+        "1": {
+          "id": 1,
+          "label": "利用注视数据微调MedSAM",
+          "size": 90,
+          "example_paper_ids": [
+            "af8c55fc2338",
+            "56d626d45cda",
+            "de94191095a6",
+            "1da25b777b31",
+            "807037447531"
+          ],
+          "llm": {
+            "name_cn": "医疗数据标准化与评估",
+            "description_cn": "该集群聚焦于医疗数据标准化处理、模型评估框架构建以及数据稀缺性解决方案，旨在提升医疗机器学习研究的可复现性、模型可靠性及数据利用效率。",
+            "tags": [
+              "数据标准化",
+              "评估框架",
+              "合成数据",
+              "互操作性",
+              "可靠性测试"
+            ],
+            "merge_suggestions": []
+          }
+        },
+        "0": {
+          "id": 0,
+          "label": "机器学习插补与加权保形推理",
+          "size": 157,
+          "example_paper_ids": [
+            "fc1d508739de",
+            "a51c369d9384",
+            "3ddd8b7d04ec",
+            "6e5bb5535c7d",
+            "92a29cbb9f1d"
+          ],
+          "llm": {
+            "name_cn": "医学模型增强与公平性优化",
+            "description_cn": "该集群聚焦于通过检索增强、隐私保护提示、时间监督预训练等技术创新，提升医学模型的准确性和公平性，同时关注数据隐私和群体偏见问题。",
+            "tags": [
+              "检索增强",
+              "公平性优化",
+              "隐私保护",
+              "预训练策略",
+              "医学模型增强"
+            ],
+            "merge_suggestions": []
+          }
+        }
+      },
+      "l2": {
+        "1": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 63,
+            "example_paper_ids": [
+              "af8c55fc2338",
+              "56d626d45cda",
+              "31317d0c8eb9",
+              "b0cb0b995a81",
+              "c11be9e6b738"
+            ]
+          },
+          "0": {
+            "id": 0,
+            "label": "合成数据生成与指令调优",
+            "size": 18,
+            "example_paper_ids": [
+              "de94191095a6",
+              "1da25b777b31",
+              "807037447531",
+              "20a389792a1f",
+              "1cb9970fc6a7"
+            ]
+          },
+          "1": {
+            "id": 1,
+            "label": "构建基准与临床思维图模型",
+            "size": 9,
+            "example_paper_ids": [
+              "3f031141ca49",
+              "8f66504aa1f3",
+              "780f47da2d10",
+              "b5415a6ff44f",
+              "e95978cef606"
+            ]
+          }
+        },
+        "0": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 113,
+            "example_paper_ids": [
+              "fc1d508739de",
+              "a51c369d9384",
+              "92a29cbb9f1d",
+              "20e5bf9a43e4",
+              "327d91ccf4bf"
+            ]
+          },
+          "0": {
+            "id": 0,
+            "label": "评估不同预训练模型与校准技术",
+            "size": 9,
+            "example_paper_ids": [
+              "3ddd8b7d04ec",
+              "d86b1e6c17fb",
+              "7ffecb2f6f94",
+              "7afd9c0e050c",
+              "68f7d81ba7ca"
+            ]
+          },
+          "1": {
+            "id": 1,
+            "label": "可微分双层优化框架",
+            "size": 18,
+            "example_paper_ids": [
+              "6e5bb5535c7d",
+              "6365fd9f4b36",
+              "b1a75193d68b",
+              "9679e0296393",
+              "752aa3614e80"
+            ]
+          },
+          "2": {
+            "id": 2,
+            "label": "多级知识图谱构建与检索增强生成",
+            "size": 7,
+            "example_paper_ids": [
+              "6d06f6aa95d7",
+              "03cb08a55e50",
+              "8d6a80517e37",
+              "5f9681e52b1e",
+              "8dbf93d41bda"
+            ]
+          },
+          "3": {
+            "id": 3,
+            "label": "使用强化学习与可验证奖励训练",
+            "size": 10,
+            "example_paper_ids": [
+              "84e0431c8053",
+              "bd803ee31367",
+              "4d8f95bee42d",
+              "875892ba1c4b",
+              "66e450919ad0"
+            ]
+          }
+        }
+      }
+    },
+    "result": {
+      "l1": {
+        "0": {
+          "id": 0,
+          "label": "在多个数据集上实现精度与效率的优越权衡，参数量减少69%，计算量降低27%",
+          "size": 54,
+          "example_paper_ids": [
+            "af8c55fc2338",
+            "3ddd8b7d04ec",
+            "b0cb0b995a81",
+            "6d06f6aa95d7",
+            "c11be9e6b738"
+          ],
+          "llm": {
+            "name_cn": "预测与检测性能提升",
+            "description_cn": "该集群的研究通过自监督预训练、时间监督预训练、细粒度对齐等方法，在医学预测和检测任务中实现了性能提升，包括C统计量、AUROC、AUC、AP等指标的改进。",
+            "tags": [
+              "预测性能",
+              "检测性能",
+              "预训练",
+              "零样本",
+              "医学影像"
+            ],
+            "merge_suggestions": [
+              {
+                "cluster_id": 1,
+                "reason_cn": "两个集群都关注医学任务中的性能提升，当前集群侧重于预测和检测，而集群1侧重于分割和检测，合并后可形成更全面的性能提升类别。"
+              }
+            ]
+          }
+        },
+        "2": {
+          "id": 2,
+          "label": "提升医学推理准确率，轻量模型匹配大型模型性能",
+          "size": 70,
+          "example_paper_ids": [
+            "56d626d45cda",
+            "fc1d508739de",
+            "a51c369d9384",
+            "807037447531",
+            "6365fd9f4b36"
+          ],
+          "llm": {
+            "name_cn": "医学推理准确率提升",
+            "description_cn": "该集群研究通过多种方法（如评估框架、检索增强、情境提示、协作框架等）提升医学AI模型的推理准确性和事实性，揭示现有模型的不足并探索改进方案。",
+            "tags": [
+              "医学推理",
+              "准确性提升",
+              "评估框架",
+              "事实性增强",
+              "模型可靠性"
+            ],
+            "merge_suggestions": []
+          }
+        },
+        "1": {
+          "id": 1,
+          "label": "分割与检测性能提升",
+          "size": 123,
+          "example_paper_ids": [
+            "de94191095a6",
+            "1da25b777b31",
+            "6e5bb5535c7d",
+            "92a29cbb9f1d",
+            "20e5bf9a43e4"
+          ],
+          "llm": {
+            "name_cn": "医疗AI性能与公平性提升",
+            "description_cn": "该集群的研究通过数据标准化、合成数据生成、公平性优化等方法，提升了医疗AI在分割、检测、检索等任务中的性能表现，同时关注不同群体间的公平性问题。",
+            "tags": [
+              "性能提升",
+              "公平性",
+              "数据标准化",
+              "合成数据",
+              "医疗AI"
+            ],
+            "merge_suggestions": []
+          }
+        }
+      },
+      "l2": {
+        "0": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 54,
+            "example_paper_ids": [
+              "af8c55fc2338",
+              "3ddd8b7d04ec",
+              "b0cb0b995a81",
+              "6d06f6aa95d7",
+              "c11be9e6b738"
+            ]
+          }
+        },
+        "2": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 70,
+            "example_paper_ids": [
+              "56d626d45cda",
+              "fc1d508739de",
+              "a51c369d9384",
+              "807037447531",
+              "6365fd9f4b36"
+            ]
+          }
+        },
+        "1": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 85,
+            "example_paper_ids": [
+              "de94191095a6",
+              "6e5bb5535c7d",
+              "92a29cbb9f1d",
+              "d86b1e6c17fb",
+              "31317d0c8eb9"
+            ]
+          },
+          "0": {
+            "id": 0,
+            "label": "在合成和真实数据中表现优于现有方法",
+            "size": 8,
+            "example_paper_ids": [
+              "1da25b777b31",
+              "313e0d430f51",
+              "698c024528b8",
+              "24aa432dd6a5",
+              "d7eb4fd1756f"
+            ]
+          },
+          "1": {
+            "id": 1,
+            "label": "提升预测性能与解释质量",
+            "size": 30,
+            "example_paper_ids": [
+              "20e5bf9a43e4",
+              "327d91ccf4bf",
+              "e558cce9cb84",
+              "b1666a083690",
+              "03cb08a55e50"
+            ]
+          }
+        }
+      }
+    },
+    "contribution": {
+      "l1": {
+        "0": {
+          "id": 0,
+          "label": "增强医学模型模态对齐与事实准确性",
+          "size": 198,
+          "example_paper_ids": [
+            "af8c55fc2338",
+            "56d626d45cda",
+            "de94191095a6",
+            "fc1d508739de",
+            "a51c369d9384"
+          ]
+        },
+        "1": {
+          "id": 1,
+          "label": "实现高效无手动提示的医学图像分割模型",
+          "size": 49,
+          "example_paper_ids": [
+            "3ddd8b7d04ec",
+            "20e5bf9a43e4",
+            "e558cce9cb84",
+            "b0cb0b995a81",
+            "6d06f6aa95d7"
+          ]
+        }
+      },
+      "l2": {
+        "0": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 198,
+            "example_paper_ids": [
+              "af8c55fc2338",
+              "56d626d45cda",
+              "de94191095a6",
+              "fc1d508739de",
+              "a51c369d9384"
+            ]
+          }
+        },
+        "1": {
+          "-1": {
+            "id": -1,
+            "label": "Other",
+            "size": 49,
+            "example_paper_ids": [
+              "3ddd8b7d04ec",
+              "20e5bf9a43e4",
+              "e558cce9cb84",
+              "b0cb0b995a81",
+              "6d06f6aa95d7"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "llm": {
+    "provider": "deepseek",
+    "model": "deepseek-chat"
+  }
+}

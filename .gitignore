@@ -1,0 +1,41 @@
+# ===== Secrets / local config =====
+.env
+.env.*
+!.env.example
+
+# ===== Python / venv =====
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+
+.venv/
+venv/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Local crawl outputs / large artifacts (keep data/ by default) =====
+*.csv
+*.jsonl
+
+# common crawl output naming
+iclr_medical_2024_2025*.json
+icml_medical_2024_2025*.json
+neurips_medical_2024_2025*.json
+
+# merged raw dataset (often large)
+medical_2024_2025.jsonl
+
+# keep the demo site data assets
+!data/**

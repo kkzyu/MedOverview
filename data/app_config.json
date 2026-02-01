@@ -1,0 +1,27 @@
+{
+  "default": {
+    "columns": [
+      "stage",
+      "keywords",
+      "method"
+    ],
+    "levels": [
+      "l1",
+      "l1",
+      "l1"
+    ]
+  },
+  "options": {
+    "dimensions": [
+      "stage",
+      "keywords",
+      "method",
+      "result",
+      "contribution"
+    ],
+    "levels": [
+      "l1",
+      "l2"
+    ]
+  }
+}

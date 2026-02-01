@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "note_cn": "用于将 method/result 的聚类簇名归一到固定字典视图；不覆盖原有 LLM/自动簇名，仅提供一个可切换的展示层。",
+  "result_types": [
+    {
+      "id": "seg_det",
+      "label_cn": "分割/检测性能提升",
+      "description_cn": "医学影像分割、检测、定位等任务的精度/召回/鲁棒性提升。",
+      "keywords": ["分割", "检测", "segmentation", "detection", "mask", "bbox", "lesion", "tumor", "medsam", "sam", "unet"]
+    },
+    {
+      "id": "cls_diag",
+      "label_cn": "分类/诊断预测提升",
+      "description_cn": "分类、诊断、风险预测、预后预测等监督任务指标提升。",
+      "keywords": ["分类", "诊断", "预测", "risk", "prognosis", "mortality", "survival", "auc", "f1", "accuracy", "ehr"]
+    },
+    {
+      "id": "reasoning_qa",
+      "label_cn": "医学推理/问答准确率提升",
+      "description_cn": "临床推理、医学问答、报告生成等任务的正确性/一致性提升。",
+      "keywords": ["推理", "问答", "qa", "vqa", "reason", "chain", "cot", "clinical", "医生", "llm", "vlm"]
+    },
+    {
+      "id": "generalization",
+      "label_cn": "泛化/跨域能力提升",
+      "description_cn": "跨医院/跨设备/跨人群/跨数据集迁移时的性能保持与提升。",
+      "keywords": ["泛化", "跨域", "domain", "shift", "transfer", "迁移", "external", "zero-shot", "few-shot"]
+    },
+    {
+      "id": "reliability_calibration",
+      "label_cn": "可靠性/校准/不确定性改进",
+      "description_cn": "模型置信度可用、校准更好、不确定性估计更可靠、错误更可控。",
+      "keywords": ["校准", "不确定性", "uncertainty", "calibration", "conformal", "保形", "coverage", "reliability", "risk control"]
+    },
+    {
+      "id": "efficiency",
+      "label_cn": "效率/算力成本优化",
+      "description_cn": "参数量/显存/推理速度/延迟等计算成本下降或效率提升。",
+      "keywords": ["效率", "加速", "speed", "latency", "参数", "compute", "flops", "压缩", "quant", "distill", "轻量"]
+    },
+    {
+      "id": "data_efficiency",
+      "label_cn": "数据效率提升",
+      "description_cn": "在标注更少、弱监督、少样本条件下仍能取得更好效果。",
+      "keywords": ["少样本", "few-shot", "weak", "弱监督", "semi", "半监督", "active", "data-efficient", "标注"]
+    },
+    {
+      "id": "fairness",
+      "label_cn": "公平性/偏差改善",
+      "description_cn": "不同人群/亚组性能差距缩小，偏差更可控。",
+      "keywords": ["公平", "fair", "bias", "disparity", "subgroup", "demographic", "gender", "race"]
+    },
+    {
+      "id": "privacy_security",
+      "label_cn": "隐私/安全性提升",
+      "description_cn": "隐私保护训练/推理，或对对抗攻击、泄露风险更稳健。",
+      "keywords": ["隐私", "privacy", "federated", "联邦", "dp", "differential", "attack", "adversarial", "security"]
+    },
+    {
+      "id": "interpretability",
+      "label_cn": "可解释/可验证提升",
+      "description_cn": "解释质量更好、证据链更清晰、结论可验证/可追溯。",
+      "keywords": ["可解释", "explain", "saliency", "rationale", "证据", "验证", "verifiable", "attribution"]
+    },
+    {
+      "id": "generation_factual",
+      "label_cn": "生成质量/事实一致性提升",
+      "description_cn": "生成式任务中事实更一致、幻觉更少、报告/摘要质量更好。",
+      "keywords": ["生成", "report", "summarization", "hallucination", "事实", "factual", "consistency", "grounding"]
+    },
+    {
+      "id": "deployment_clinical",
+      "label_cn": "临床可用性/工作流改进",
+      "description_cn": "更贴近临床流程、可部署性更强、对医生工作流更友好。",
+      "keywords": ["临床", "workflow", "deployment", "usable", "doctor", "human", "evaluation", "benchmark"]
+    }
+  ],
+  "method_types": [
+    {
+      "id": "med_image_seg_det",
+      "label_cn": "医学影像分割/检测方法",
+      "description_cn": "围绕分割/检测/定位等视觉任务的架构、损失、训练策略与提示机制。",
+      "keywords": ["分割", "检测", "segmentation", "detection", "unet", "sam", "medsam", "prompt", "mask", "bbox"]
+    },
+    {
+      "id": "multimodal_vlm",
+      "label_cn": "多模态医疗大模型",
+      "description_cn": "医学视觉语言模型、多模态 LLM/VLM、图文对齐与跨模态推理。",
+      "keywords": ["多模态", "vlm", "vqa", "vision-language", "llm", "对齐", "alignment", "图文", "caption"]
+    },
+    {
+      "id": "rag_kg",
+      "label_cn": "检索增强/知识注入",
+      "description_cn": "RAG、知识图谱、指南/文献检索与外部知识约束。",
+      "keywords": ["rag", "检索", "retrieval", "知识图谱", "kg", "guideline", "知识", "evidence"]
+    },
+    {
+      "id": "synthetic_data",
+      "label_cn": "合成数据/数据增强",
+      "description_cn": "通过生成、模拟、扩增、伪标注等提升训练数据质量与覆盖。",
+      "keywords": ["合成", "synthetic", "augmentation", "扩增", "diffusion", "生成", "伪标注", "simulation"]
+    },
+    {
+      "id": "pretrain_ssl",
+      "label_cn": "预训练/自监督表征",
+      "description_cn": "自监督、对比学习、预训练策略与表征学习。",
+      "keywords": ["自监督", "ssl", "contrastive", "pretrain", "预训练", "representation"]
+    },
+    {
+      "id": "reliability_conformal",
+      "label_cn": "可信推断/校准/保形",
+      "description_cn": "不确定性、校准、保形预测、风险控制与可靠输出。",
+      "keywords": ["校准", "不确定性", "conformal", "保形", "coverage", "risk", "可靠"]
+    },
+    {
+      "id": "rl_preference",
+      "label_cn": "强化学习/偏好优化",
+      "description_cn": "RL、偏好学习、奖励建模、可验证奖励等训练范式。",
+      "keywords": ["强化学习", "rl", "reward", "偏好", "preference", "ppo", "dpo"]
+    },
+    {
+      "id": "privacy_federated",
+      "label_cn": "隐私保护/联邦学习",
+      "description_cn": "联邦学习、差分隐私、安全多方计算等隐私保护训练。",
+      "keywords": ["联邦", "federated", "privacy", "dp", "差分隐私", "secure"]
+    },
+    {
+      "id": "causal_counterfactual",
+      "label_cn": "因果推断/反事实",
+      "description_cn": "因果结构、反事实推断、干预效果估计与可解释干预分析。",
+      "keywords": ["因果", "causal", "counterfactual", "反事实", "treatment effect", "干预"]
+    },
+    {
+      "id": "ehr_time_series",
+      "label_cn": "EHR/时间序列建模",
+      "description_cn": "电子健康记录、纵向序列、病程轨迹与多源表格/序列数据建模。",
+      "keywords": ["ehr", "电子健康记录", "时间序列", "trajectory", "tabular", "longitudinal"]
+    },
+    {
+      "id": "graph_models",
+      "label_cn": "图学习/关系建模",
+      "description_cn": "图神经网络、关系推理、医疗知识结构的图表示学习。",
+      "keywords": ["图", "graph", "gnn", "relation", "knowledge graph", "kg"]
+    },
+    {
+      "id": "benchmark_eval",
+      "label_cn": "基准/评测/工具链",
+      "description_cn": "数据集构建、benchmark、评测协议、临床评估与工具系统。",
+      "keywords": ["benchmark", "评测", "dataset", "数据集", "evaluation", "基准", "tool"]
+    }
+  ]
+}

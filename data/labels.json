@@ -1,0 +1,7015 @@
+{
+  "af8c55fc2338": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Prognosis::Survival / time-to-event",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于时间到事件预测（预后）并开发基础模型（数据基础设施）。"
+    }
+  },
+  "56d626d45cda": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学LLM的评估框架开发，属于数据基础设施中的基准评估范畴，同时涉及通用评估方法。"
+    }
+  },
+  "de94191095a6": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Data standard"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文提出医疗事件数据标准，属于数据基础设施中的数据标准化，同时涉及互操作性和可复现研究等更广泛主题。"
+    }
+  },
+  "fc1d508739de": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于提升医疗视觉语言模型在诊断决策支持、影像报告生成和视觉问答中的事实准确性，并通过基准评估验证效果。"
+    }
+  },
+  "a51c369d9384": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于隐私保护技术，属于数据基础设施中的隐私子类，同时涉及模型增强的通用方法。"
+    }
+  },
+  "1da25b777b31": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "DataInfra::Benchmark / evaluation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过合成数据解决医疗数据稀缺和隐私问题，属于数据基础设施，并支持临床文档检索工作流。"
+    }
+  },
+  "3ddd8b7d04ec": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Prognosis::Survival / time-to-event",
+        "ImagingPipeline::Report generation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于利用纵向EHR和3D影像数据进行疾病风险预测，属于预后分析，同时涉及影像报告生成和基础模型开发。"
+    }
+  },
+  "6e5bb5535c7d": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像分析中的公平性优化，属于成像流程和数据处理基础设施范畴。"
+    }
+  },
+  "92a29cbb9f1d": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学图像分割的公平性数据集和评估方法，属于影像处理流程和数据基础设施范畴。"
+    }
+  },
+  "20e5bf9a43e4": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文提出一种无监督学习方法，通过小模型与LLM协同提升医疗表格数据预测性能，主要涉及数据基础设施中的评估方法，不属于明确的临床工作流程阶段。"
+    }
+  },
+  "807037447531": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文构建医学视觉问答基准数据集评估多模态模型可靠性，属于影像流程的视觉问答和数据基础设施的基准评估。"
+    }
+  },
+  "d86b1e6c17fb": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "Diagnosis::Clinical QA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像处理任务，如报告生成和视觉问答，并支持临床决策，因此主要属于成像流程和诊断类别。"
+    }
+  },
+  "327d91ccf4bf": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于生物医学问答系统，主要支持临床决策和知识验证，属于诊断和工作流程范畴。"
+    }
+  },
+  "31317d0c8eb9": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学视觉问答的幻觉基准构建与模型评估，属于影像流程和基础设施领域。"
+    }
+  },
+  "58b6c125547b": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注多语言医疗LLM的基础模型构建与泛化，属于数据基础设施和通用技术范畴。"
+    }
+  },
+  "e558cce9cb84": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于医学影像中的异常检测，属于影像处理流程中的检测环节，并为诊断提供决策支持。"
+    }
+  },
+  "7ffecb2f6f94": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估医学视觉基础模型的不确定性量化，涉及影像报告生成、基准评估和基础模型研究。"
+    }
+  },
+  "6365fd9f4b36": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出多学科协作框架，通过角色扮演代理增强医学推理能力，适用于诊断决策支持和临床文档工作流程。"
+    }
+  },
+  "0730257ecdce": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究医学图像数据集的内在属性对模型泛化和鲁棒性的影响，属于图像处理流程中的检测任务和基础设施中的基准评估。"
+    }
+  },
+  "b0cb0b995a81": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Report generation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文通过细粒度视觉语言预训练提升CT图像诊断的准确性和泛化能力，属于诊断决策支持、影像报告生成和基础模型范畴。"
+    }
+  },
+  "b1666a083690": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割的公平性数据集和评估方法，属于影像处理流程和数据基础设施范畴。"
+    }
+  },
+  "7afd9c0e050c": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "Diagnosis::Clinical QA",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像报告生成、临床问答和文档处理，属于影像处理流程、诊断和工作流程阶段。"
+    }
+  },
+  "6d06f6aa95d7": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Screening",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Screening::Early detection",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于零样本医学检测，通过视觉语言模型提升疾病检测性能，属于筛查和影像处理流程。"
+    }
+  },
+  "79feccfa7820": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "Diagnosis::Clinical QA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像（CXR）的多模态理解与生成，属于影像处理流程，同时支持临床问答辅助诊断。"
+    }
+  },
+  "7df20a2d1505": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Screening",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Screening::Early detection",
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文提出多模态多任务框架，专注于乳腺癌筛查和视网膜疾病诊断，涉及动态融合和任务依赖建模，支持诊断决策和早期检测，同时包含检测和分割等影像处理任务。"
+    }
+  },
+  "c11be9e6b738": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文研究合成数据对脑肿瘤分割模型的影响，属于影像处理流程中的分割任务和数据基础设施中的基准评估。"
+    }
+  },
+  "e1304836cf3c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗影像分割任务，并评估计算效率与模型鲁棒性。"
+    }
+  },
+  "86f00b1f2dcb": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像报告生成与合成数据评估，属于影像流程和数据基础设施范畴。"
+    }
+  },
+  "03cb08a55e50": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "Monitoring"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Prognosis::Survival / time-to-event",
+        "Prognosis::Readmission risk",
+        "Monitoring::ICU monitoring"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于临床预测（死亡率、再入院），属于诊断决策支持、预后评估和ICU监测范畴。"
+    }
+  },
+  "20a389792a1f": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文分析医学图像数据集属性对模型泛化的影响，属于数据基础设施中的基准评估，并涉及医学图像处理流程中的检测任务。"
+    }
+  },
+  "bed044b22f24": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Prognosis::Disease progression",
+        "ImagingPipeline::Reconstruction"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文构建数据集支持乳腺癌骨转移的AI诊断、预后分析和影像重建任务。"
+    }
+  },
+  "96bbe620809a": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要贡献是构建大规模医学多模态数据集，支持AI模型基准评估和报告生成任务。"
+    }
+  },
+  "84e0431c8053": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "DataInfra"
+      ],
+      "l2": [
+        "Monitoring::Remote monitoring",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于使用可穿戴设备数据进行健康监测，并构建基础模型以减少对标注数据的依赖。"
+    }
+  },
+  "5aca68ab5e50": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于EHR表征学习与预训练方法，属于数据基础设施和通用技术范畴。"
+    }
+  },
+  "4c2f44ce7568": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Screening",
+        "Diagnosis"
+      ],
+      "l2": [
+        "Screening::Early detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "论文专注于乳腺癌筛查和视网膜疾病诊断，属于筛查和诊断的决策支持框架。"
+    }
+  },
+  "d91d29889fdd": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文研究医学解释生成中的不确定性量化，主要涉及临床文档工作流程，但未明确对应其他具体临床阶段。"
+    }
+  },
+  "66b4f531c438": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出一种高效时间序列建模方法，适用于医疗数据，主要涉及数据基础设施中的基准评估，但未明确指定具体临床工作流程阶段。"
+    }
+  },
+  "49be8405ec07": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文聚焦于通过因果对齐提升医学诊断的可靠性，涉及放射科专家的决策过程，属于诊断决策支持与影像报告生成范畴。"
+    }
+  },
+  "1cb9970fc6a7": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于开发基准评估方法和临床文档处理工具，以提升大语言模型在电子健康记录中的时序推理能力。"
+    }
+  },
+  "313e0d430f51": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment"
+      ],
+      "l2": [
+        "Treatment::Personalized treatment"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出一种离线策略学习方法，适用于医疗场景中的个性化治疗优化，但未明确指定具体临床阶段。"
+    }
+  },
+  "68f7d81ba7ca": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于3D生物医学图像的表示学习，适用于分割任务，并涉及基础模型开发。"
+    }
+  },
+  "1ae7074d5a03": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出评估医学图像模型语义能力的指标，涉及影像报告生成和基准评估。"
+    }
+  },
+  "8d6a80517e37": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "Monitoring"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Prognosis::Survival / time-to-event",
+        "Prognosis::Readmission risk",
+        "Monitoring::ICU monitoring"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于临床预测（死亡率、再入院）和决策支持，属于诊断、预后和监测阶段。"
+    }
+  },
+  "afe6ee18b2e4": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于视觉适应任务，包括医学图像分类和分割，并进行了大规模基准评估。"
+    }
+  },
+  "f23cdc4beda6": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "Monitoring"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Prognosis::Disease progression",
+        "Monitoring::Chronic follow-up"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文构建数据集支持乳腺癌骨转移的AI诊断、预后和长期监测。"
+    }
+  },
+  "edc7683fcea9": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文提出增强LLM主动提问能力，应用于医疗诊断决策支持，优化临床工作流程。"
+    }
+  },
+  "b3024c9cfaf9": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于电子健康记录中的临床问答任务，涉及临床文档处理和基准评估，同时具有通用代理能力。"
+    }
+  },
+  "5f9681e52b1e": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "Treatment",
+        "DataInfra"
+      ],
+      "l2": [
+        "Prognosis::Survival / time-to-event",
+        "Prognosis::Readmission risk",
+        "Treatment::Personalized treatment",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于使用个性化知识图谱增强医疗预测，主要应用于预后预测（死亡率和再入院）和个性化治疗推荐，同时涉及数据基础设施中的基础模型方法。"
+    }
+  },
+  "ae055e609e2f": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文提出多模态对齐框架，可提升医学影像与临床文本的跨模态检索和图像描述，属于影像处理流程和基础模型基础设施。"
+    }
+  },
+  "a6090f41a61f": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于提升电子健康记录的表征能力，属于数据基础设施中的基础模型类别，同时涉及通用医疗预测任务。"
+    }
+  },
+  "698c024528b8": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment"
+      ],
+      "l2": [
+        "Treatment::Personalized treatment"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "论文提出优化治疗决策的通用框架，但未明确限定于特定临床阶段。"
+    }
+  },
+  "b1a75193d68b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出偏好数据合成框架用于模型对齐，属于数据基础设施中的评估基准，但主要关注通用AI而非特定临床工作流。"
+    }
+  },
+  "ae2c6f6a52a1": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文聚焦深度学习模型安全防御，属于数据基础设施中的评估基准范畴，同时涉及通用安全技术。"
+    }
+  },
+  "1486b885629d": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文主要关注LLM的安全评估与基准测试，属于数据基础设施范畴，同时涉及模型可靠性等通用问题。"
+    }
+  },
+  "12a1c1f382a0": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Foundation models",
+        "Workflow::Medical coding"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出一种医学代码分词器，属于数据基础设施中的基础模型，并涉及医疗编码工作流程，同时支持多种临床任务。"
+    }
+  },
+  "23baa49cb9e8": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学报告生成，属于影像处理流程中的报告生成和临床工作流中的文档记录。"
+    }
+  },
+  "4d8f95bee42d": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出统一医学视觉理解与生成的模型，涉及影像报告生成和基础模型开发。"
+    }
+  },
+  "5859c409c7e7": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法通过预训练2D模型处理3D医学影像切片，生成嵌入用于分割和检测任务，并在多个任务上进行评估。"
+    }
+  },
+  "780f47da2d10": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要关注医学大语言模型基准评估的效度验证，属于数据基础设施中的基准评估范畴，同时涉及一般性讨论。"
+    }
+  },
+  "92f583bb9bd2": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Report generation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过整合CXR分析工具和多模态大语言模型，提供诊断决策支持，生成影像报告，并优化临床工作流程。"
+    }
+  },
+  "605cf434d96f": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于通过融合结构和语义提升诊断预测，属于诊断决策支持，同时涉及基础模型在医疗数据中的应用。"
+    }
+  },
+  "3f031141ca49": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究偏见对临床诊断决策的影响，并关注医疗系统的公平性保障。"
+    }
+  },
+  "febe95ddf485": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Treatment"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Treatment::Personalized treatment"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出自适应模态重平衡方法，旨在提升多模态医疗AI在诊断和治疗决策中的准确性与可解释性。"
+    }
+  },
+  "1e4da45741a3": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文关注医疗AI系统在临床沟通中的误导风险，涉及工作流程中的文档生成和患者交互，但主要焦点是系统行为而非具体临床阶段。"
+    }
+  },
+  "9d92d171b121": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像报告生成的多模态预训练框架，属于成像流程和基础模型基础设施范畴。"
+    }
+  },
+  "e1da6bd99ddb": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分割（属于成像流程），并在基准测试中评估性能（属于数据基础设施）。"
+    }
+  },
+  "54a6584f7729": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像中的目标检测任务，属于影像处理流程中的检测环节，同时涉及数据集构建和评估基准。"
+    }
+  },
+  "d9923a68b63a": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出基于Mamba的多模态医学图像融合模型，旨在增强临床诊断效果，属于诊断决策支持和影像报告生成范畴。"
+    }
+  },
+  "fea47b68af29": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉语言模型在报告生成和VQA任务中的对齐优化，属于影像处理流程和基准评估范畴。"
+    }
+  },
+  "9cb38039bb9b": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学AI基准的构建与评估，属于数据基础设施中的基准评估类别，同时涉及其他通用AI推理评估。"
+    }
+  },
+  "9679e0296393": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学大语言模型的评估框架和基准测试，属于数据基础设施中的评估类别，同时涉及通用评估方法。"
+    }
+  },
+  "41b508a83252": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学数据隐私保护技术，属于数据基础设施中的隐私子类，同时涉及通用AI安全方法。"
+    }
+  },
+  "8d2a91793997": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出医学图像增强流程，属于成像管道，同时涉及数据基础设施中的评估指标。"
+    }
+  },
+  "375d3aeb639e": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分割的公平性改进，属于图像处理流程中的分割任务，同时涉及数据基础设施中的公平性考量。"
+    }
+  },
+  "bd803ee31367": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Treatment",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Treatment::Personalized treatment",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文使用自适应模仿学习建模医疗决策过程，主要涉及诊断决策支持、个性化治疗和临床工作流程文档化。"
+    }
+  },
+  "8f66504aa1f3": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Diagnosis::Clinical QA",
+        "Prognosis::Disease progression",
+        "ImagingPipeline::VQA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉问答，支持临床诊断决策和神经认知预后预测，属于影像处理流程中的视觉问答任务。"
+    }
+  },
+  "d7c3769cee53": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出TinyMIG框架，将视觉基础模型的泛化能力迁移到医学影像单域泛化，属于影像处理流程和数据基础设施范畴。"
+    }
+  },
+  "e904e4da428a": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割的域泛化方法，属于成像流程中的分割任务，同时涉及基准评估的数据基础设施。"
+    }
+  },
+  "5cf30f000ea7": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出一种联邦学习方法，专注于医疗数据隐私保护和多任务分析，包括图像检测与分割。"
+    }
+  },
+  "53b99b710e18": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像任务的高效模型搜索与部署，属于成像流程和基础设施评估范畴。"
+    }
+  },
+  "752aa3614e80": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要关注医疗视觉语言模型的基准测试和可信度评估，属于数据基础设施中的评估范畴，同时涉及模型部署前的验证工作。"
+    }
+  },
+  "1d5ff1b3c65e": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗大语言模型的安全性评估基准创建，属于数据基础设施中的评估类别，同时涉及一般性安全研究。"
+    }
+  },
+  "4e5a6cc4278d": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "DataInfra"
+      ],
+      "l2": [
+        "Monitoring::Remote monitoring",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文关注医学时间序列的动态特征获取，旨在通过优化测量策略降低成本并提高预测性能，适用于远程监测和基准评估场景。"
+    }
+  },
+  "24aa432dd6a5": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文聚焦于合成数据生成与评估，属于数据基础设施中的基准评估范畴，同时涉及通用方法创新。"
+    }
+  },
+  "55b84559d750": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Treatment"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Treatment::Treatment planning"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割模型的比较，直接支持放疗计划等治疗应用。"
+    }
+  },
+  "46979724a95e": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Treatment"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Treatment::Treatment planning"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出3D医学图像转换方法，直接应用于肿瘤分割（影像处理）和治疗规划（治疗阶段）。"
+    }
+  },
+  "d7eb4fd1756f": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学数据基础设施中的合成数据生成与评估，属于数据基础设施和通用方法范畴。"
+    }
+  },
+  "9d72d6d651d0": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Reconstruction"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于3D CT图像重建，属于医学影像处理流程中的重建阶段。"
+    }
+  },
+  "a260af1692ed": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models",
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注构建多模态临床基准数据集和预训练策略，属于数据基础设施和影像处理流程，同时涉及通用AI研究。"
+    }
+  },
+  "b24412955c3f": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文专注于医学图像分割的数据增强方法，属于影像处理流程和基准评估范畴。"
+    }
+  },
+  "8dbf93d41bda": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于通过多级知识图谱增强LLM在骨科临床决策中的推理能力，主要支持诊断决策和临床文档工作流程。"
+    }
+  },
+  "b2c6b6e52eae": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Prognosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Prognosis::Complication risk",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文提出利用负样本分析辅助诊断决策和预后风险评估，属于医疗数据分析方法创新。"
+    }
+  },
+  "59636bebccc9": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于超声图像中的解剖结构检测，属于影像处理流程中的检测任务，同时检测结果可为临床诊断提供决策支持。"
+    }
+  },
+  "75fc49042ffd": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "Diagnosis::Clinical QA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉问答（Med-VQA），属于影像处理流程中的报告生成和视觉问答，同时支持临床诊断中的质量保证。"
+    }
+  },
+  "fd6793b98487": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文主要关注算法偏差消除和敏感数据保护，属于数据基础设施中的隐私保护范畴，同时涉及通用方法扩展。"
+    }
+  },
+  "42bd45f85ebd": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Other"
+      ],
+      "l2": [
+        "Other::Other"
+      ],
+      "confidence": 0.2,
+      "rationale_cn": "论文聚焦通用聚类算法，未明确涉及临床工作流程。"
+    }
+  },
+  "8d54213eac6c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于主动学习算法的优化与评估，属于数据基础设施中的基准评估范畴，同时涉及通用机器学习方法。"
+    }
+  },
+  "10393c5b9136": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究医疗问答中RAG系统的对抗攻击与防御，涉及临床文档安全、数据隐私保护，但主要关注通用技术漏洞而非特定临床阶段。"
+    }
+  },
+  "c6cd093fcdc4": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像语义分割技术改进，属于影像处理流程中的分割任务，并涉及基础模型微调。"
+    }
+  },
+  "c1954741a0e8": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Segmentation",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过自监督学习实现肿瘤分割与临床解释的联合定位，提升诊断决策支持的可信度。"
+    }
+  },
+  "0c03922bf93f": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于开放目标检测框架，属于医学影像处理流程中的检测和报告生成，同时涉及基准评估方法。"
+    }
+  },
+  "c13943ee5036": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出一种自引导后处理方法，用于减轻模型中的虚假偏差，主要涉及模型评估和鲁棒性改进，属于数据基础设施和通用类别。"
+    }
+  },
+  "ddbf32ff1d8c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Reconstruction"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于医学图像逆问题重建，属于成像流程中的重建阶段，同时作为通用优化方法也适用于其他领域。"
+    }
+  },
+  "c877eb58760e": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Monitoring"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Monitoring::Chronic follow-up"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出一种多视图分类框架，应用于睡眠分期任务，属于诊断决策支持与慢性病监测范畴。"
+    }
+  },
+  "b539374643ce": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment"
+      ],
+      "l2": [
+        "Treatment::Therapy selection"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "论文关注治疗效果的量化，属于治疗选择支持，但主要贡献是方法论而非直接临床应用。"
+    }
+  },
+  "70bd253dd9fc": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DrugDiscovery",
+        "Prognosis"
+      ],
+      "l2": [
+        "DrugDiscovery::Target identification",
+        "Prognosis::Disease progression"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法通过遗传变异预测疾病，支持靶点识别和疾病进展预测。"
+    }
+  },
+  "842fd606e78b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要研究数据基础设施中的基准评估方法，通过知识蒸馏提升数据剪枝效果，属于机器学习通用技术而非特定临床工作流。"
+    }
+  },
+  "5d34a3ea9c44": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DrugDiscovery"
+      ],
+      "l2": [
+        "DrugDiscovery::Molecule generation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于使用生成模型进行3D分子设计和合成路径协同设计，属于药物发现中的分子生成阶段。"
+    }
+  },
+  "7ef4f178098b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文研究标签比例学习的样本复杂度理论，属于机器学习基础方法，与临床工作流程无直接关联。"
+    }
+  },
+  "6ccda27d9929": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注机器学习模型在部署后的性能评估与基准测试，属于数据基础设施中的评估范畴，同时涉及模型衰减这一通用问题。"
+    }
+  },
+  "de05e62fc5ba": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文提出检测LLM幻觉的方法，可应用于临床文档生成的质量评估与基准测试。"
+    }
+  },
+  "5bb4b9f41020": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Other"
+      ],
+      "l2": [
+        "Other::Other"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文研究大语言模型的安全漏洞和风险评估，不属于临床工作流程范畴。"
+    }
+  },
+  "ff62587ad837": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 0
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Other"
+      ],
+      "l2": [
+        "Other::Other"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出一种通用的时间序列分类方法，未明确针对特定临床工作流程。"
+    }
+  },
+  "c3df7335ad19": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文讨论可信AI代理构建，涉及基础模型集成和验证，属于数据基础设施和其他类别。"
+    }
+  },
+  "419d40e39f22": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于文档视觉问答中的解释性热图生成，适用于医学影像报告生成和临床文档辅助。"
+    }
+  },
+  "554c3f2e9148": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "Monitoring"
+      ],
+      "l2": [
+        "Prognosis::Survival / time-to-event",
+        "Monitoring::Chronic follow-up"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于生存时间预测和右删失数据，适用于预后评估和慢性随访监测。"
+    }
+  },
+  "d24b1491eeb2": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于多语言视觉问答的标记对齐和基准评估，属于成像流程和数据基础设施范畴。"
+    }
+  },
+  "9aede3042355": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于单细胞数据的基准测试和评估方法，属于数据基础设施范畴，同时涉及通用机器学习方法评估。"
+    }
+  },
+  "fbca8a047d89": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文专注于大语言模型的测试时学习与领域适应方法，属于基础模型优化和数据基础设施范畴，不直接涉及临床工作流程。"
+    }
+  },
+  "7a66ddebc5bc": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "Treatment"
+      ],
+      "l2": [
+        "Monitoring::Remote monitoring",
+        "Treatment::Personalized treatment"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出基于大语言模型的数字孪生自适应更新方法，主要用于持续监测系统状态变化和个性化治疗模拟。"
+    }
+  },
+  "f14c213ae21e": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DrugDiscovery"
+      ],
+      "l2": [
+        "DrugDiscovery::Molecule generation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于分子对接任务，这是药物发现中分子生成的关键环节。"
+    }
+  },
+  "f5228c211014": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像处理流程中的切片选择和基准测试，属于影像管道和数据基础设施范畴。"
+    }
+  },
+  "1d490581452b": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Treatment",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Treatment::Therapy selection",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出基于LLM的自适应协作框架，旨在提升医疗决策准确性，主要涉及诊断决策支持、治疗方案选择和临床工作流程优化。"
+    }
+  },
+  "27593adfe4e0": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割技术，属于影像处理流程的核心环节，同时分割结果可为临床诊断提供决策支持。"
+    }
+  },
+  "e0cef01c577e": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "DataInfra"
+      ],
+      "l2": [
+        "Monitoring::ICU monitoring",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该方法针对不规则采样医疗时间序列建模，适用于ICU监测场景，并在多个数据集上进行了评估。"
+    }
+  },
+  "c57f23f331d1": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像中的结构检测，这是影像处理流程的关键步骤，同时为疾病诊断提供决策支持。"
+    }
+  },
+  "02bf839ea288": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要关注医疗大语言模型的安全基准评估，属于数据基础设施中的基准/评估类别，同时涉及伦理安全等未明确分类的方面。"
+    }
+  },
+  "79fe1c166acb": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "Diagnosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Monitoring::ICU monitoring",
+        "Diagnosis::Decision support",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学时间序列分析，通过LLM优化提升临床决策支持，属于监测、诊断和数据基础设施的交叉应用。"
+    }
+  },
+  "5d1b843c2b89": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "Diagnosis::Clinical QA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文聚焦医学影像报告生成与临床问答，属于影像处理流程和诊断辅助范畴。"
+    }
+  },
+  "9f85d69ee73d": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::VQA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗视觉语言模型的基准测试和评估，属于数据基础设施和影像流程的可视化问答评估范畴。"
+    }
+  },
+  "c947c0e11075": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像序列的视觉定位基准测试，属于影像处理流程中的报告生成和视觉问答任务，同时涉及数据基础设施中的基准评估。"
+    }
+  },
+  "ae8e26853fd9": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出通用医学基础模型，主要支持影像报告生成和视觉问答任务，属于影像处理流程和数据基础设施范畴。"
+    }
+  },
+  "f8244bea6218": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于评估大语言模型在医学计算任务中的表现，属于临床工作流程中的文档计算和基准评估范畴。"
+    }
+  },
+  "56184d54615c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Monitoring",
+        "Diagnosis",
+        "Treatment"
+      ],
+      "l2": [
+        "Monitoring::Chronic follow-up",
+        "Diagnosis::Decision support",
+        "Treatment::Personalized treatment"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过构建心脏数字孪生实现无创监测、疾病检测和虚拟治疗模拟，适用于慢性随访、决策支持和个性化治疗场景。"
+    }
+  },
+  "47623c55c987": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学影像基础模型的公平性基准测试与评估，属于数据基础设施和影像处理流程范畴。"
+    }
+  },
+  "8b03e5f89b44": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Diagnosis::Clinical QA",
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文开发儿科大语言模型助手，主要用于诊断决策支持和临床问答，涉及临床文档工作流程，并包含基准评估方法。"
+    }
+  },
+  "fd04f7c4ec17": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学影像基础模型的公平性基准测试与评估，属于数据基础设施和影像流程的范畴。"
+    }
+  },
+  "f4b67ef26e60": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文通过提升医学视觉问答的可解释性来辅助诊断决策，属于影像处理流程中的视觉问答任务，并创建了新的基准数据集进行评估。"
+    }
+  },
+  "be11bffd7681": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于医学图像分析的可解释性方法，主要应用于影像报告生成环节，同时涉及通用技术改进。"
+    }
+  },
+  "e9c77f6239aa": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗时间序列分类，用于疾病诊断，属于诊断决策支持，同时涉及信号检测的成像流程。"
+    }
+  },
+  "b5415a6ff44f": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文构建医学多模态基准用于评估模型性能，涉及视觉问答和基准评估，但主要关注通用评估而非具体临床工作流。"
+    }
+  },
+  "875892ba1c4b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment"
+      ],
+      "l2": [
+        "Treatment::Personalized treatment",
+        "Treatment::Dose optimization"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文使用离线强化学习优化医疗治疗策略，主要关注治疗阶段的个性化治疗和剂量优化，同时涉及安全约束属于其他范畴。"
+    }
+  },
+  "91aa0e8e7039": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::VQA"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要构建医疗AI评估基准，属于数据基础设施的基准评估，同时涉及视觉问答的成像流程，但核心是基准测试而非直接临床应用。"
+    }
+  },
+  "3b0fca3d3eb6": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文聚焦医学图像分类任务，属于影像流程中的检测环节，同时涉及视觉基础模型的微调方法，属于数据基础设施中的基础模型范畴。"
+    }
+  },
+  "af3c223e1cb0": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于改进医疗基础模型的数据表示和处理技术，属于数据基础设施和通用方法范畴。"
+    }
+  },
+  "9f877e81b204": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要研究优化临床AI推理策略，属于工作流程优化和评估基准范畴。"
+    }
+  },
+  "864386b36fda": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Report generation",
+        "ImagingPipeline::VQA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要构建医学多模态数据集并评估模型性能，属于数据基础设施和影像处理流程。"
+    }
+  },
+  "e0cb2e9456f8": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文开发自动化工具评估医学院个人陈述，主要涉及临床工作流程中的文档处理，但非直接医疗应用。"
+    }
+  },
+  "851feda26c89": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割技术，属于影像处理流程中的分割阶段。"
+    }
+  },
+  "fbe989d87bc5": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要关注医疗基础模型的基准测试和隐私保护，属于数据基础设施范畴，同时涉及其他通用技术。"
+    }
+  },
+  "2a7e9813bdd1": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗大语言模型的安全评估基准构建，属于数据基础设施中的基准评估范畴，同时涉及医疗伦理等跨领域问题。"
+    }
+  },
+  "0716a9b34cf3": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Diagnosis"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像分类中的定位任务，属于影像处理流程中的检测环节，同时为诊断提供决策支持。"
+    }
+  },
+  "83a1c98de4f0": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Prognosis::Survival / time-to-event",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学影像预后中的时间到事件预测公平性评估，同时涉及影像报告生成和公平性算法等通用技术。"
+    }
+  },
+  "66e450919ad0": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法通过异常检测提升疾病诊断性能，适用于医学时间序列分析。"
+    }
+  },
+  "82a9e6c662a1": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分析中的域偏移问题，通过知识增强方法提升模型在检测和分割任务中的泛化性能，并进行了广泛的基准评估。"
+    }
+  },
+  "c853ca563291": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "Workflow::Reporting"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学影像报告的自动生成评估，属于影像处理流程和临床工作流程的报告环节。"
+    }
+  },
+  "11838c9667a4": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医学问答的基准测试和模型评估，属于数据基础设施中的评估类别，同时涉及通用评估方法。"
+    }
+  },
+  "d368b704236c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割，属于成像流程中的分割阶段。"
+    }
+  },
+  "72208a85110d": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像报告生成任务，并建立了数据集和基准评估，属于影像处理流程和数据基础设施范畴。"
+    }
+  },
+  "c827b4c346ae": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割方法，属于影像处理流程中的分割阶段。"
+    }
+  },
+  "de7b4761cd59": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "Workflow::Reporting",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该系统专注于医学研究的工作流程优化、数据基础设施和报告生成，属于临床文档和评估范畴。"
+    }
+  },
+  "1987227232fb": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出多智能体框架优化医疗决策过程，主要支持诊断决策并改进临床工作流程。"
+    }
+  },
+  "8e9bfc3118bc": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于多标签胸部X光诊断，提出改进的注意力机制以支持临床决策，并涉及医学影像检测任务。"
+    }
+  },
+  "ede817c3a688": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要评估医疗诊断中的偏见并提供基准资源，属于诊断决策支持和数据基础设施的基准评估。"
+    }
+  },
+  "a6c82e90cbd5": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Triage",
+        "Diagnosis"
+      ],
+      "l2": [
+        "Triage::Emergency triage",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文聚焦于资源受限环境下的急诊医疗决策支持，属于分诊和诊断辅助范畴。"
+    }
+  },
+  "182f7d24cf5d": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗数据隐私保护技术（差分隐私、联邦学习）和医学图像分类任务。"
+    }
+  },
+  "1425f3cd8e14": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗数据基础设施的基准评估，并涉及临床文档查询的自动化工作流程。"
+    }
+  },
+  "b490ba9f0e80": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出一种医学图像分割后处理框架，属于影像处理流程中的分割任务，同时关注临床部署中的质量与安全性问题。"
+    }
+  },
+  "0fbd37e9dd9c": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出医学大模型编辑方法，主要涉及临床文档工作流程改进、数据基础设施评估，以及不属于核心临床流程的其他技术方面。"
+    }
+  },
+  "e95978cef606": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "Diagnosis"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation",
+        "Diagnosis::Clinical QA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于通过LLM生成预咨询问题，优化临床工作流程中的病史采集环节，属于临床文档和临床质量保证范畴。"
+    }
+  },
+  "36e793c33258": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 2
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割任务，属于影像处理流程，同时涉及模型评估和基准测试。"
+    }
+  },
+  "76a4623c44d0": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉问答基准测试和基础模型开发，属于影像流程和数据基础设施范畴。"
+    }
+  },
+  "53762c62dba0": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::VQA"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉问答，通过增强推理透明度和准确性来支持临床诊断决策。"
+    }
+  },
+  "4a2f2a1f4183": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于电子健康记录数据处理、基准评估和基础模型研究，属于数据基础设施范畴。"
+    }
+  },
+  "5cc6382097d0": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估医疗LLM在多轮对话中的鲁棒性，主要涉及诊断中的临床质量保证和工作流程中的质量与安全方面。"
+    }
+  },
+  "3807e4edcccd": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要涉及医学图像报告生成（ImagingPipeline::Report generation），同时通过翻译和语音功能改善临床文档可及性（Workflow::Clinical documentation），并包含辅助技术等其它方面（Other::Other）。"
+    }
+  },
+  "f909505ab67c": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割，属于影像处理流程中的分割阶段。"
+    }
+  },
+  "d20526b47e59": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Treatment"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Treatment::Treatment planning"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分割技术，用于放疗规划等治疗准备阶段，属于影像处理流程和治疗规划范畴。"
+    }
+  },
+  "efda7fa4a7cb": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学影像基准框架的标准化评估，并涉及报告生成任务。"
+    }
+  },
+  "e387dd9043fd": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究医学影像诊断中的AI模型偏见，涉及诊断决策支持、影像检测和模型评估。"
+    }
+  },
+  "eef0e3793579": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出模拟医生推理的RAG系统，主要用于诊断决策支持和临床文档生成。"
+    }
+  },
+  "8b4c197e4330": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Quality & safety",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗LLM的安全性和对抗鲁棒性评估，属于临床工作流程中的质量安全与数据基础设施的基准评估范畴。"
+    }
+  },
+  "495db139a0f1": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学视觉语言模型，主要涉及图像问答和基准评估任务。"
+    }
+  },
+  "513e066860e4": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估闭源LLMs在医学推理中的忠实性，涉及诊断决策支持和临床工作流程的质量与安全方面。"
+    }
+  },
+  "94cb99b71577": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估LLMs在医学问答中的公平性和准确性，涉及诊断质量保证和工作流程中的安全与质量评估。"
+    }
+  },
+  "9dcd6c22d1c7": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于3D医学图像分割，属于影像处理流程中的分割任务。"
+    }
+  },
+  "06e80f3849db": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分析中的领域偏移问题，通过整合医学知识先验提升模型泛化性能，属于图像处理流程和基础设施评估范畴。"
+    }
+  },
+  "87888c6cea75": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于提升医学LLM在临床问答中的准确性和推理稳定性，属于诊断支持和工作流程优化范畴。"
+    }
+  },
+  "8b8c0fd2cb85": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Prognosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Prognosis::Readmission risk",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出整合医学本体的表示框架，用于临床预测任务如再入院风险，属于预后和基础模型范畴。"
+    }
+  },
+  "741b5a1c90ff": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "DataInfra::Benchmark / evaluation",
+        "Workflow::Clinical documentation",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗NLP系统的数据基础设施、临床工作流程改进和伦理合规问题。"
+    }
+  },
+  "7c5fdd0a4314": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文主要关注医疗AI模型的知识产权保护和安全，属于数据基础设施中的隐私保护范畴，同时涉及其他安全技术。"
+    }
+  },
+  "21afdc13c1cf": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像配准技术，属于影像处理流程，同时涉及性能评估和泛化能力分析。"
+    }
+  },
+  "4b43c3facf68": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "DataInfra::Foundation models",
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出一种隐私保护的联邦学习方法，优化医疗影像基础模型的数据基础设施和成像流程。"
+    }
+  },
+  "3ed8965c00e2": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗数据基础设施中的隐私保护和评估框架，属于数据基础设施范畴，同时涉及通用技术方法。"
+    }
+  },
+  "b768494affc6": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 0
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过评估医学问答中LLMs与医生的相关性对齐，涉及诊断支持和工作流程质量改进。"
+    }
+  },
+  "ff229149087f": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Privacy",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文提出医疗文档隐私保护方案，属于数据基础设施中的隐私保护和工作流程中的临床文档处理。"
+    }
+  },
+  "068e61011c49": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "论文聚焦医学图像分割任务，属于成像流程中的分割环节，同时涉及基准评估以验证方法泛化能力。"
+    }
+  },
+  "c6cf0f7fdc81": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学图像分割方法改进，并利用基础模型增强特征表示。"
+    }
+  },
+  "2a6b9c07fcca": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究干预对多智能体诊断系统准确性的影响，属于诊断决策支持和临床质量安全范畴。"
+    }
+  },
+  "3f78e79f298b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像配准技术，属于影像处理流程，同时涉及性能评估和基准测试。"
+    }
+  },
+  "39485a9be3c6": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "ImagingPipeline::VQA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过生成思维链数据提升医学多模态大语言模型的诊断决策支持能力，主要应用于医学视觉问答和基准评估。"
+    }
+  },
+  "007640578756": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 3
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗问答基准评估和临床决策支持，未涉及具体临床工作流程阶段。"
+    }
+  },
+  "a8c3c30afce1": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于评估LLM在临床决策支持中的多跳推理能力，涉及诊断决策、临床文档工作流程和基准评估基础设施。"
+    }
+  },
+  "7ea16da2d2f5": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学图像分割的公平性改进，属于成像流程中的分割任务，同时涉及基础模型的公平感知集成方法。"
+    }
+  },
+  "8ff6c913f193": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Clinical QA",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于提升医学问答的临床可靠性和诊断推理，属于诊断和临床工作流程优化。"
+    }
+  },
+  "ea5f83947195": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于评估LLM在临床决策支持中的多跳推理能力，涉及诊断决策、临床文档工作流程和基准评估基础设施。"
+    }
+  },
+  "32de0146d6f4": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "Workflow"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗数据基础设施的基准评估，并涉及临床文档查询工作流程。"
+    }
+  },
+  "001d80ca1991": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Data standard"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文主要分析医学影像数据集在社区平台上的治理和质量问题，属于数据基础设施和基准评估范畴，不直接涉及临床工作流程。"
+    }
+  },
+  "401dc457997e": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Monitoring",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Monitoring::ICU monitoring",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该方法专注于iEEG时间序列分类，用于辅助诊断决策、ICU监测和医学信号检测。"
+    }
+  },
+  "b44763d0cd66": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估大语言模型在医疗诊断中的解释和沟通能力，涉及诊断决策支持和临床文档工作流程。"
+    }
+  },
+  "d38e80c784c2": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Workflow::Medical coding",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医疗编码自动化，属于临床工作流程中的编码环节，同时建立了基准测试框架用于评估模型性能。"
+    }
+  },
+  "61c8f747a040": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "Workflow"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation",
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出使用眼动时序引导医学图像分割，属于影像处理流程中的分割任务，同时涉及人机交互的临床工作流程改进。"
+    }
+  },
+  "d54d831cbad3": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割技术，属于成像流程中的分割阶段。"
+    }
+  },
+  "e6d7a0a4def1": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于创建用于偏见检测的医学影像数据集，属于数据基础设施和影像处理流程，但主要贡献是推动公平性研究。"
+    }
+  },
+  "225053c005b7": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文研究多智能体医疗系统中人类干预对诊断准确性的影响，涉及诊断决策支持、临床工作流程质量与安全，以及AI系统可靠性测试等综合方面。"
+    }
+  },
+  "246eef41b314": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文专注于医疗时间序列基础模型的开发，属于数据基础设施中的基础模型类别，同时涉及通用技术，因此包含其他类别。"
+    }
+  },
+  "e9e959147565": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Workflow"
+      ],
+      "l2": [
+        "Workflow::Clinical documentation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医疗文档的通俗化生成，属于临床工作流程中的文档处理环节，同时涉及通用NLP技术。"
+    }
+  },
+  "f932cf9ddd38": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": 1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.9,
+      "rationale_cn": "该论文专注于医学影像基准框架的标准化评估，并涉及报告生成任务。"
+    }
+  },
+  "7e4d422ecd27": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于医学影像的持续学习框架，涉及检测任务评估和隐私保护技术。"
+    }
+  },
+  "320086c8f32a": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Reconstruction"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像重建，属于成像流程中的核心环节。"
+    }
+  },
+  "e454ab4a4512": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.95,
+      "rationale_cn": "该论文专注于医学图像分割技术，属于影像处理流程中的分割阶段。"
+    }
+  },
+  "b7bc29fe3664": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Reconstruction",
+        "DataInfra::Data standard"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文使用生成模型提升OCT图像质量以实现标准化，属于成像流程重建和数据基础设施标准范畴。"
+    }
+  },
+  "c24b236dd37b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 1,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra",
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation",
+        "ImagingPipeline::Detection"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文评估医学基础模型在组织病理学中的批次效应问题，涉及数据基础设施的基准评估和成像流程的检测任务。"
+    }
+  },
+  "3e70bb65b2ed": {
+    "keywords": {
+      "l1": 2,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Screening",
+        "Diagnosis"
+      ],
+      "l2": [
+        "Screening::Early detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "论文聚焦呼吸健康早期筛查，并支持诊断决策，属于筛查和诊断阶段。"
+    }
+  },
+  "0c9f30b0e1dd": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis"
+      ],
+      "l2": [
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于临床诊断预测，通过LLM辅助决策支持，同时涉及数据基础设施的基准评估。"
+    }
+  },
+  "708aa6325c43": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline",
+        "DataInfra"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation",
+        "DataInfra::Benchmark / evaluation",
+        "DataInfra::Foundation models"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出多模态多任务机器学习框架，适用于医疗图像处理（检测、分割）和基础模型评估，但具体应用场景不明确。"
+    }
+  },
+  "7d0ba7d3ce9b": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment",
+        "Monitoring",
+        "Workflow"
+      ],
+      "l2": [
+        "Treatment::Personalized treatment",
+        "Monitoring::Remote monitoring",
+        "Workflow::Quality & safety"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文通过认知机器学习优化临床试验中的电子患者报告结局系统，涉及个性化治疗调整、远程监测参与度以及提升数据质量和安全性。"
+    }
+  },
+  "c4cf6ed2c0a8": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Detection",
+        "ImagingPipeline::Segmentation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "论文提出改进医学影像分类公平性的方法，属于影像处理流程中的检测和分割阶段，但未明确针对具体临床工作流。"
+    }
+  },
+  "6cd205bb3ced": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment",
+        "Monitoring",
+        "Prognosis"
+      ],
+      "l2": [
+        "Treatment::Personalized treatment",
+        "Monitoring::Chronic follow-up",
+        "Prognosis::Survival / time-to-event"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出强化学习框架优化治疗决策，关注事件间隔概率，适用于精准医疗中的治疗选择、慢性病监测和生存分析。"
+    }
+  },
+  "d373039325a3": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Screening",
+        "Diagnosis"
+      ],
+      "l2": [
+        "Screening::Early detection",
+        "Diagnosis::Decision support"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于使用多模态数据（EHR和基因组）进行青少年子宫内膜异位症的早期识别（筛查）和辅助诊断决策（诊断）。"
+    }
+  },
+  "505d1efbe590": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 0,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Privacy"
+      ],
+      "confidence": 0.8,
+      "rationale_cn": "该论文主要研究大语言模型的数据隐私与安全机制，属于数据基础设施和通用机器学习范畴。"
+    }
+  },
+  "428b45577e68": {
+    "keywords": {
+      "l1": 1,
+      "l2": -1
+    },
+    "method": {
+      "l1": 1,
+      "l2": -1
+    },
+    "result": {
+      "l1": 2,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Diagnosis",
+        "Workflow",
+        "DataInfra"
+      ],
+      "l2": [
+        "Diagnosis::Decision support",
+        "Diagnosis::Clinical QA",
+        "Workflow::Clinical documentation",
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文专注于脊柱裂的诊断推理评估与改进，涉及临床决策支持、质量保证、文档工作流程以及模型基准测试。"
+    }
+  },
+  "59ee1dbe611d": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "Treatment",
+        "DrugDiscovery"
+      ],
+      "l2": [
+        "Treatment::Therapy selection",
+        "DrugDiscovery::Drug response"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "论文提出约束贝叶斯优化框架，适用于医疗治疗设计和药物响应优化等场景，但未明确限定于特定临床阶段。"
+    }
+  },
+  "5673ab0fea48": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": -1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "ImagingPipeline"
+      ],
+      "l2": [
+        "ImagingPipeline::Report generation"
+      ],
+      "confidence": 0.7,
+      "rationale_cn": "该论文提出几何深度学习方法，主要应用于图像配准和医学成像，属于成像流程中的报告生成阶段，但方法本身更偏向通用框架。"
+    }
+  },
+  "3bdc431fa0d9": {
+    "keywords": {
+      "l1": 0,
+      "l2": -1
+    },
+    "method": {
+      "l1": 0,
+      "l2": 1
+    },
+    "result": {
+      "l1": 1,
+      "l2": -1
+    },
+    "contribution": {
+      "l1": 0,
+      "l2": -1
+    },
+    "stage": {
+      "l1": [
+        "DataInfra"
+      ],
+      "l2": [
+        "DataInfra::Benchmark / evaluation"
+      ],
+      "confidence": 0.85,
+      "rationale_cn": "该论文提出自动合成偏好数据的框架，属于数据基础设施中的评估基准，但主要关注模型对齐而非特定临床工作流。"
+    }
+  }
+}

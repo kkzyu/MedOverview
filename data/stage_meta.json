@@ -1,0 +1,322 @@
+{
+  "l1": {
+    "Screening": {
+      "id": "Screening",
+      "label": "Screening",
+      "desc": "Population screening, early detection, triage-like screening in non-clinical settings",
+      "size": 5
+    },
+    "Diagnosis": {
+      "id": "Diagnosis",
+      "label": "Diagnosis",
+      "desc": "Clinical diagnosis and differential diagnosis; supporting clinician decision-making",
+      "size": 66
+    },
+    "Triage": {
+      "id": "Triage",
+      "label": "Triage",
+      "desc": "Prioritization and routing: urgency, referral, escalation, resource allocation",
+      "size": 1
+    },
+    "Treatment": {
+      "id": "Treatment",
+      "label": "Treatment",
+      "desc": "Treatment selection, planning, personalization, dosing, and therapy optimization",
+      "size": 16
+    },
+    "Monitoring": {
+      "id": "Monitoring",
+      "label": "Monitoring",
+      "desc": "Continuous monitoring, follow-up, ICU/ward monitoring, wearable sensing",
+      "size": 14
+    },
+    "Prognosis": {
+      "id": "Prognosis",
+      "label": "Prognosis",
+      "desc": "Outcome prediction: survival, complications, readmission, progression",
+      "size": 14
+    },
+    "Rehabilitation": {
+      "id": "Rehabilitation",
+      "label": "Rehabilitation",
+      "desc": "Rehab planning, recovery tracking, functional outcome prediction",
+      "size": 0
+    },
+    "Workflow": {
+      "id": "Workflow",
+      "label": "Workflow",
+      "desc": "Clinical operations: documentation, scheduling, coding, reporting, quality improvement",
+      "size": 52
+    },
+    "DrugDiscovery": {
+      "id": "DrugDiscovery",
+      "label": "DrugDiscovery",
+      "desc": "Drug discovery, molecule generation, target identification; pre-clinical",
+      "size": 4
+    },
+    "ImagingPipeline": {
+      "id": "ImagingPipeline",
+      "label": "ImagingPipeline",
+      "desc": "Imaging pipeline stage: acquisition, reconstruction, detection, segmentation, reporting",
+      "size": 115
+    },
+    "DataInfra": {
+      "id": "DataInfra",
+      "label": "DataInfra",
+      "desc": "Data standardization, privacy, evaluation, benchmarking, foundation models for medical data",
+      "size": 139
+    },
+    "Other": {
+      "id": "Other",
+      "label": "Other",
+      "desc": "Does not fit above stages",
+      "size": 3
+    }
+  },
+  "l2": {
+    "Screening": {
+      "Risk screening": {
+        "id": "Risk screening",
+        "label": "Risk screening",
+        "size": 0
+      },
+      "Early detection": {
+        "id": "Early detection",
+        "label": "Early detection",
+        "size": 5
+      },
+      "Public screening workflow": {
+        "id": "Public screening workflow",
+        "label": "Public screening workflow",
+        "size": 0
+      }
+    },
+    "Diagnosis": {
+      "Symptom assessment": {
+        "id": "Symptom assessment",
+        "label": "Symptom assessment",
+        "size": 0
+      },
+      "Differential diagnosis": {
+        "id": "Differential diagnosis",
+        "label": "Differential diagnosis",
+        "size": 0
+      },
+      "Decision support": {
+        "id": "Decision support",
+        "label": "Decision support",
+        "size": 53
+      },
+      "Clinical QA": {
+        "id": "Clinical QA",
+        "label": "Clinical QA",
+        "size": 16
+      }
+    },
+    "Triage": {
+      "Severity scoring": {
+        "id": "Severity scoring",
+        "label": "Severity scoring",
+        "size": 0
+      },
+      "Referral routing": {
+        "id": "Referral routing",
+        "label": "Referral routing",
+        "size": 0
+      },
+      "Emergency triage": {
+        "id": "Emergency triage",
+        "label": "Emergency triage",
+        "size": 1
+      },
+      "Resource allocation": {
+        "id": "Resource allocation",
+        "label": "Resource allocation",
+        "size": 0
+      }
+    },
+    "Treatment": {
+      "Therapy selection": {
+        "id": "Therapy selection",
+        "label": "Therapy selection",
+        "size": 3
+      },
+      "Treatment planning": {
+        "id": "Treatment planning",
+        "label": "Treatment planning",
+        "size": 3
+      },
+      "Personalized treatment": {
+        "id": "Personalized treatment",
+        "label": "Personalized treatment",
+        "size": 10
+      },
+      "Dose optimization": {
+        "id": "Dose optimization",
+        "label": "Dose optimization",
+        "size": 1
+      }
+    },
+    "Monitoring": {
+      "ICU monitoring": {
+        "id": "ICU monitoring",
+        "label": "ICU monitoring",
+        "size": 5
+      },
+      "Chronic follow-up": {
+        "id": "Chronic follow-up",
+        "label": "Chronic follow-up",
+        "size": 5
+      },
+      "Remote monitoring": {
+        "id": "Remote monitoring",
+        "label": "Remote monitoring",
+        "size": 4
+      },
+      "Adverse event detection": {
+        "id": "Adverse event detection",
+        "label": "Adverse event detection",
+        "size": 0
+      }
+    },
+    "Prognosis": {
+      "Survival / time-to-event": {
+        "id": "Survival / time-to-event",
+        "label": "Survival / time-to-event",
+        "size": 8
+      },
+      "Complication risk": {
+        "id": "Complication risk",
+        "label": "Complication risk",
+        "size": 1
+      },
+      "Disease progression": {
+        "id": "Disease progression",
+        "label": "Disease progression",
+        "size": 4
+      },
+      "Readmission risk": {
+        "id": "Readmission risk",
+        "label": "Readmission risk",
+        "size": 4
+      }
+    },
+    "Rehabilitation": {
+      "Rehab planning": {
+        "id": "Rehab planning",
+        "label": "Rehab planning",
+        "size": 0
+      },
+      "Recovery assessment": {
+        "id": "Recovery assessment",
+        "label": "Recovery assessment",
+        "size": 0
+      },
+      "Functional scoring": {
+        "id": "Functional scoring",
+        "label": "Functional scoring",
+        "size": 0
+      }
+    },
+    "Workflow": {
+      "Clinical documentation": {
+        "id": "Clinical documentation",
+        "label": "Clinical documentation",
+        "size": 38
+      },
+      "Medical coding": {
+        "id": "Medical coding",
+        "label": "Medical coding",
+        "size": 2
+      },
+      "Reporting": {
+        "id": "Reporting",
+        "label": "Reporting",
+        "size": 2
+      },
+      "Quality & safety": {
+        "id": "Quality & safety",
+        "label": "Quality & safety",
+        "size": 12
+      }
+    },
+    "DrugDiscovery": {
+      "Molecule generation": {
+        "id": "Molecule generation",
+        "label": "Molecule generation",
+        "size": 2
+      },
+      "Target identification": {
+        "id": "Target identification",
+        "label": "Target identification",
+        "size": 1
+      },
+      "Drug response": {
+        "id": "Drug response",
+        "label": "Drug response",
+        "size": 1
+      },
+      "Biomarker discovery": {
+        "id": "Biomarker discovery",
+        "label": "Biomarker discovery",
+        "size": 0
+      }
+    },
+    "ImagingPipeline": {
+      "Reconstruction": {
+        "id": "Reconstruction",
+        "label": "Reconstruction",
+        "size": 5
+      },
+      "Detection": {
+        "id": "Detection",
+        "label": "Detection",
+        "size": 34
+      },
+      "Segmentation": {
+        "id": "Segmentation",
+        "label": "Segmentation",
+        "size": 44
+      },
+      "Report generation": {
+        "id": "Report generation",
+        "label": "Report generation",
+        "size": 35
+      },
+      "VQA": {
+        "id": "VQA",
+        "label": "VQA",
+        "size": 20
+      }
+    },
+    "DataInfra": {
+      "Data standard": {
+        "id": "Data standard",
+        "label": "Data standard",
+        "size": 3
+      },
+      "Privacy": {
+        "id": "Privacy",
+        "label": "Privacy",
+        "size": 15
+      },
+      "Benchmark / evaluation": {
+        "id": "Benchmark / evaluation",
+        "label": "Benchmark / evaluation",
+        "size": 102
+      },
+      "Foundation models": {
+        "id": "Foundation models",
+        "label": "Foundation models",
+        "size": 32
+      }
+    },
+    "Other": {
+      "Other": {
+        "id": "Other",
+        "label": "Other",
+        "size": 3
+      }
+    }
+  }
+}
