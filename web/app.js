@@ -416,8 +416,8 @@ async function loadJson(path) {
 }
 
 async function main() {
-  const hint = byId("hint");
-  hint.textContent = "加载数据中…";
+  const footer = document.getElementById("footerCounts");
+  if (footer) footer.textContent = "加载数据中…";
 
   const tryLoadMeta = async () => {
     try {
@@ -742,18 +742,19 @@ async function main() {
     return parts.length ? `聚焦：${parts.join(" · ")}` : "全量";
   }
 
-  // Footer counts
-  const counts = new Map();
-  for (const p of papers) {
-    const k = venueKey(p.venue);
-    counts.set(k, (counts.get(k) || 0) + 1);
-  }
-  const footer = document.getElementById("footerCounts");
-  if (footer) {
-    const iclr = counts.get("ICLR") || 0;
-    const icml = counts.get("ICML") || 0;
-    const neurips = counts.get("NeurIPS") || 0;
-    footer.textContent = `论文计数：ICLR ${iclr} · ICML ${icml} · NeurIPS ${neurips} · 合计 ${papers.length}`;
+  // Footer counts (as the only global footer text)
+  {
+    const counts = new Map();
+    for (const p of papers) {
+      const k = venueKey(p.venue);
+      counts.set(k, (counts.get(k) || 0) + 1);
+    }
+    if (footer) {
+      const iclr = counts.get("ICLR") || 0;
+      const icml = counts.get("ICML") || 0;
+      const neurips = counts.get("NeurIPS") || 0;
+      footer.textContent = `论文计数：ICLR ${iclr} · ICML ${icml} · NeurIPS ${neurips} · 合计 ${papers.length}`;
+    }
   }
 
   function rerender() {
@@ -824,10 +825,6 @@ async function main() {
     };
 
     chart.setOption(option, true);
-
-    const expText = `[${expanded[0] ?? "-"}, ${expanded[1] ?? "-"}, ${expanded[2] ?? "-"}]`;
-    const modeText = viewMode === "dict" ? "字典视图" : "原始视图";
-    hint.textContent = `论文数: ${papers.length} · 固定视图: ${columns.join(" - ")} · ${modeText} · 已展开（双击 L1 进入/退出子主题；或用“列X回退”按钮）`;
 
     // default details: focus mode should also narrow the right panel
     const focusPaperIds = papers
@@ -914,6 +911,6 @@ async function main() {
 
 main().catch((e) => {
   console.error(e);
-  const hint = byId("hint");
-  hint.textContent = `加载失败：${e?.message || e}`;
+  const footer = document.getElementById("footerCounts");
+  if (footer) footer.textContent = `加载失败：${e?.message || e}`;
 });
