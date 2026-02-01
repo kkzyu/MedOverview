@@ -146,6 +146,8 @@ select {
   grid-template-columns: 7fr 3fr;
   gap: 12px;
   padding: 12px;
+  height: calc(100vh - 140px);
+  min-height: 0;
 }
 
 .panel {
@@ -153,10 +155,6 @@ select {
   border-radius: 14px;
   background: #ffffff;
   overflow: hidden;
-}
-
-/* Right panel becomes a column layout so we can append the RAG block */
-.layout > .panel:nth-child(2) {
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -169,7 +167,7 @@ select {
   border-bottom: 1px solid rgba(17,24,39,0.08);
 }
 
-.chart { height: calc(100vh - 160px); min-height: 520px; }
+.chart { flex: 1; min-height: 0; }
 
 .hint {
   padding: 10px 12px;
@@ -180,6 +178,12 @@ select {
 
 .details {
   padding: 10px 12px;
+  flex: 3;
+  min-height: 0;
+  overflow: auto;
+}
+
+.qa {
   flex: 1;
   min-height: 0;
   overflow: auto;
