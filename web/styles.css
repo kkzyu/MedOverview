@@ -155,6 +155,13 @@ select {
   overflow: hidden;
 }
 
+/* Right panel becomes a column layout so we can append the RAG block */
+.layout > .panel:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .panel-title {
   padding: 10px 12px;
   font-size: 12px;
@@ -173,7 +180,8 @@ select {
 
 .details {
   padding: 10px 12px;
-  height: calc(100vh - 140px);
+  flex: 1;
+  min-height: 0;
   overflow: auto;
 }
 
@@ -250,4 +258,101 @@ select {
 .footer-text {
   font-size: 12px;
   line-height: 1.4;
+}
+
+/* ===== RAG QA ===== */
+.qa {
+  border-top: 1px solid rgba(17,24,39,0.08);
+  padding: 10px 12px 12px 12px;
+  background: rgba(17,24,39,0.01);
+}
+
+.qa-title {
+  font-size: 12px;
+  font-weight: 650;
+  color: rgba(17,24,39,0.78);
+  margin-bottom: 8px;
+}
+
+.qa-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.qa-row-tight {
+  margin-top: -2px;
+}
+
+.qa-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: #ffffff;
+  color: #111827;
+}
+
+.qa-radio {
+  font-size: 12px;
+  color: rgba(17,24,39,0.75);
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qa-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 8px 0;
+}
+
+.qa-preset-btn {
+  font-size: 11px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: rgba(59,130,246,0.06);
+  cursor: pointer;
+}
+
+.qa-preset-btn:hover {
+  background: rgba(59,130,246,0.12);
+}
+
+.qa-status {
+  font-size: 12px;
+  margin: 6px 0 8px 0;
+}
+
+.qa-answer {
+  font-size: 12px;
+  line-height: 1.55;
+  color: rgba(17,24,39,0.86);
+  white-space: pre-wrap;
+}
+
+.qa-citations {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.qa-cite {
+  font-size: 11px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1d4ed8;
+}
+
+.qa-cite:hover {
+  text-decoration: underline;
 }

@@ -45,6 +45,33 @@
         <div class="panel-title">细节视图</div>
         <div id="detailsHint" class="details-hint"></div>
         <div id="details" class="details"></div>
+
+        <div class="qa" aria-label="问答">
+          <div class="qa-title">问答（RAG）</div>
+
+          <div class="qa-row">
+            <input id="ragKey" class="qa-input" type="password" placeholder="DeepSeek API Key（仅保存在浏览器，可选）" />
+            <button id="ragSaveKey" class="btn btn-small">记住</button>
+            <button id="ragClearKey" class="btn btn-small">清除</button>
+          </div>
+
+          <div class="qa-row">
+            <input id="ragQuestion" class="qa-input" placeholder="对当前筛选论文提问（例如：这个方向常见方法路线是什么？）" />
+            <button id="ragAsk" class="btn">Ask</button>
+          </div>
+
+          <div class="qa-row qa-row-tight">
+            <label class="qa-radio"><input type="radio" name="ragStyle" value="overview" checked /> 综述型</label>
+            <label class="qa-radio"><input type="radio" name="ragStyle" value="cite" /> 精确引用型</label>
+            <span id="ragScope" class="muted"></span>
+          </div>
+
+          <div id="ragPresets" class="qa-presets"></div>
+
+          <div id="ragStatus" class="qa-status muted"></div>
+          <div id="ragAnswer" class="qa-answer"></div>
+          <div id="ragCitations" class="qa-citations"></div>
+        </div>
       </section>
     </main>
 
