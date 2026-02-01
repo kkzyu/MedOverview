@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from sentence_transformers import SentenceTransformer
 
-from deepseek_client import DeepSeekClient
+from deepseek_client import DeepSeekClient, DeepSeekConfig
 
 
 ROOT = Path(__file__).resolve().parent
@@ -143,8 +143,6 @@ def search(q: str = Query("", min_length=0), k: int = Query(20, ge=1, le=100)) -
 
 @app.post("/api/ask")
 def ask(payload: dict[str, Any] = Body(...)) -> dict[str, Any]:
-    if _deepseek is None:
-        raise HTTPException(400, "DEEPSEEK_API_KEY not configured on server")
     if _st_model is None or _doc_emb is None:
         raise HTTPException(500, "embeddings not ready")
 
@@ -152,8 +150,22 @@ def ask(payload: dict[str, Any] = Body(...)) -> dict[str, Any]:
     if not question:
         raise HTTPException(400, "missing question")
 
+    style = (payload.get("style") or "overview").strip().lower()
+    if style not in {"overview", "cite"}:
+        style = "overview"
+
     top_k = int(payload.get("top_k") or 8)
     top_k = max(3, min(12, top_k))
+
+    # BYOK: use request api_key if provided (do NOT store on server)
+    request_api_key = (payload.get("api_key") or "").strip()
+    request_model = (payload.get("model") or "").strip()
+    if request_api_key:
+        deepseek = DeepSeekClient(DeepSeekConfig(api_key=request_api_key, base_url=os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com"), model=request_model or os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")))
+    else:
+        if _deepseek is None:
+            raise HTTPException(400, "DEEPSEEK_API_KEY not configured on server, and request api_key is empty")
+        deepseek = _deepseek
 
     restrict_ids = payload.get("paper_ids")
     if isinstance(restrict_ids, list) and restrict_ids:
@@ -207,32 +219,46 @@ def ask(payload: dict[str, Any] = Body(...)) -> dict[str, Any]:
         "Return JSON only."
     )
 
-    user = {
+    user: dict[str, Any] = {
         "question": question,
+        "style": style,
         "papers": contexts,
-        "output_schema": {
+    }
+    if style == "cite":
+        user["output_schema"] = {
             "answer_cn": "string",
             "key_points": "list of short strings (optional)",
             "citations": "list of paper ids used",
-        },
-    }
+        }
+    else:
+        user["output_schema"] = {
+            "answer_cn": "string",
+            "key_points": "list of short strings (optional)",
+            "representative_papers": "list of paper ids (optional)",
+        }
 
     import json
 
-    resp = _deepseek.chat_json(
+    resp = deepseek.chat_json(
         system=system,
         user=json.dumps(user, ensure_ascii=False),
         max_tokens=900,
         temperature=0.2,
     )
 
-    citations = resp.get("citations")
-    if not isinstance(citations, list):
-        citations = []
-    citations = [c for c in citations if isinstance(c, str) and c in _paper_by_id]
+    citations: list[str] = []
+    if style == "cite":
+        raw = resp.get("citations")
+        if isinstance(raw, list):
+            citations = [c for c in raw if isinstance(c, str) and c in _paper_by_id]
+    else:
+        raw = resp.get("representative_papers")
+        if isinstance(raw, list):
+            citations = [c for c in raw if isinstance(c, str) and c in _paper_by_id]
 
     return {
         "question": question,
+        "used_style": style,
         "answer": resp.get("answer_cn") or "",
         "key_points": resp.get("key_points") if isinstance(resp.get("key_points"), list) else [],
         "citations": citations,
