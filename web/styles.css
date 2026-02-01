@@ -139,6 +139,27 @@ select {
   color: #111827;
 }
 
+.year-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 6px;
+}
+
+.year-label {
+  font-size: 12px;
+  color: rgba(17,24,39,0.70);
+  user-select: none;
+}
+
+.year-select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: #ffffff;
+  color: #111827;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 7fr 3fr;

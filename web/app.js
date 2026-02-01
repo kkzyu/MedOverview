@@ -516,8 +516,93 @@ async function main() {
 
   const paperIndex = buildIndex(papers);
 
+  const allPapers = papers;
+
   // RAG index (client-side retrieval)
-  const bm25 = buildBm25Index(papers, RAG_DEFAULTS.bm25);
+  const bm25 = buildBm25Index(allPapers, RAG_DEFAULTS.bm25);
+
+  // ===== Year filter =====
+  let activeYear = "all"; // 'all' | '2024' | '2025' ...
+  const yearFilter = document.getElementById("yearFilter");
+  {
+    const years = uniq(allPapers.map((p) => p.year).filter((y) => Number.isFinite(y)))
+      .map((y) => Number(y))
+      .sort((a, b) => b - a);
+
+    if (yearFilter) {
+      yearFilter.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "all";
+      optAll.textContent = "全部";
+      yearFilter.appendChild(optAll);
+
+      for (const y of years) {
+        const opt = document.createElement("option");
+        opt.value = String(y);
+        opt.textContent = String(y);
+        yearFilter.appendChild(opt);
+      }
+
+      yearFilter.value = "all";
+      yearFilter.addEventListener("change", () => {
+        activeYear = String(yearFilter.value || "all");
+        expanded = { 0: null, 1: null, 2: null };
+        rerender();
+      });
+    }
+  }
+
+  // ===== Venue filter =====
+  let activeVenue = "all"; // 'all' | 'ICLR' | 'ICML' | 'NeurIPS' | ...
+  const venueFilter = document.getElementById("venueFilter");
+  {
+    const preferredOrder = ["ICLR", "ICML", "NeurIPS", "Other"];
+    const venues = uniq(allPapers.map((p) => venueKey(p.venue)).filter((v) => typeof v === "string" && v.trim()))
+      .map((v) => String(v))
+      .sort((a, b) => {
+        const ia = preferredOrder.indexOf(a);
+        const ib = preferredOrder.indexOf(b);
+        if (ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+        return a.localeCompare(b);
+      });
+
+    if (venueFilter) {
+      venueFilter.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "all";
+      optAll.textContent = "全部";
+      venueFilter.appendChild(optAll);
+
+      for (const v of venues) {
+        const opt = document.createElement("option");
+        opt.value = String(v);
+        opt.textContent = String(v);
+        venueFilter.appendChild(opt);
+      }
+
+      venueFilter.value = "all";
+      venueFilter.addEventListener("change", () => {
+        activeVenue = String(venueFilter.value || "all");
+        expanded = { 0: null, 1: null, 2: null };
+        rerender();
+      });
+    }
+  }
+
+  function getActivePapers() {
+    let ps = allPapers;
+    if (activeYear !== "all") {
+      const y = Number(activeYear);
+      if (Number.isFinite(y)) {
+        ps = ps.filter((p) => Number(p.year) === y);
+      }
+    }
+    if (activeVenue !== "all") {
+      const v = String(activeVenue);
+      ps = ps.filter((p) => venueKey(p.venue) === v);
+    }
+    return ps;
+  }
 
   // Fixed 3 columns as requested.
   const columns = stageMeta ? ["stage", "method", "result"] : ["method", "result", "contribution"];
@@ -760,6 +845,15 @@ async function main() {
 
   function focusText() {
     const parts = [];
+
+    if (activeYear !== "all") {
+      parts.push(`年份=${activeYear}`);
+    }
+
+    if (activeVenue !== "all") {
+      parts.push(`会议=${activeVenue}`);
+    }
+
     for (let col = 0; col < 3; col++) {
       const dim = columns[col];
       const ex = expanded[col];
@@ -790,8 +884,9 @@ async function main() {
   }
 
   function rerender() {
+    const activePapers = getActivePapers();
     const { nodes, links, nodePaperIds, linkPaperIds, nodeLabelMap } = buildSankey({
-      papers,
+      papers: activePapers,
       labels,
       meta,
       stageMeta,
@@ -859,7 +954,7 @@ async function main() {
     chart.setOption(option, true);
 
     // default details: focus mode should also narrow the right panel
-    const focusPaperIds = papers
+    const focusPaperIds = activePapers
       .filter((p) => paperMatchesExpanded(labels, p.id, columns[0], expanded[0]))
       .filter((p) => paperMatchesExpanded(labels, p.id, columns[1], expanded[1]))
       .filter((p) => paperMatchesExpanded(labels, p.id, columns[2], expanded[2]))

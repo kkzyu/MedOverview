@@ -2,95 +2,44 @@
   "model": "paraphrase-multilingual-MiniLM-L12-v2",
   "years": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "min_cluster_size_l1": 10,
   "min_samples_l1": 2,
   "min_cluster_size_l2": 5,
   "min_samples_l2": 2,
   "counts": {
-    "papers": 247
+    "papers": 310
   },
   "dimensions": {
     "keywords": {
       "l1": {
-        "0": {
-          "id": 0,
-          "label": "医学图像分割 / 医学影像 / 电子健康记录 / 扩散模型",
-          "size": 119,
+        "-1": {
+          "id": -1,
+          "label": "Other",
+          "size": 310,
           "example_paper_ids": [
             "af8c55fc2338",
-            "de94191095a6",
-            "a51c369d9384",
-            "3ddd8b7d04ec",
-            "6e5bb5535c7d"
-          ]
-        },
-        "1": {
-          "id": 1,
-          "label": "合成数据 / 大型语言模型 / 检索增强生成 / 电子健康记录",
-          "size": 65,
-          "example_paper_ids": [
             "56d626d45cda",
-            "1da25b777b31",
-            "58b6c125547b",
-            "6365fd9f4b36",
-            "03cb08a55e50"
-          ]
-        },
-        "2": {
-          "id": 2,
-          "label": "可解释性 / 胸部X光 / 多模态大语言模型 / 医学视觉问答",
-          "size": 63,
-          "example_paper_ids": [
+            "de94191095a6",
             "fc1d508739de",
-            "807037447531",
-            "d86b1e6c17fb",
-            "31317d0c8eb9",
-            "b0cb0b995a81"
+            "a51c369d9384"
           ]
         }
       },
       "l2": {
-        "0": {
+        "-1": {
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 119,
+            "size": 310,
             "example_paper_ids": [
               "af8c55fc2338",
-              "de94191095a6",
-              "a51c369d9384",
-              "3ddd8b7d04ec",
-              "6e5bb5535c7d"
-            ]
-          }
-        },
-        "1": {
-          "-1": {
-            "id": -1,
-            "label": "Other",
-            "size": 65,
-            "example_paper_ids": [
               "56d626d45cda",
-              "1da25b777b31",
-              "58b6c125547b",
-              "6365fd9f4b36",
-              "03cb08a55e50"
-            ]
-          }
-        },
-        "2": {
-          "-1": {
-            "id": -1,
-            "label": "Other",
-            "size": 63,
-            "example_paper_ids": [
+              "de94191095a6",
               "fc1d508739de",
-              "807037447531",
-              "d86b1e6c17fb",
-              "31317d0c8eb9",
-              "b0cb0b995a81"
+              "a51c369d9384"
             ]
           }
         }
@@ -100,8 +49,8 @@
       "l1": {
         "1": {
           "id": 1,
-          "label": "利用注视数据微调MedSAM",
-          "size": 90,
+          "label": "数据合成与专家审核",
+          "size": 104,
           "example_paper_ids": [
             "af8c55fc2338",
             "56d626d45cda",
@@ -113,7 +62,7 @@
         "0": {
           "id": 0,
           "label": "机器学习插补与加权保形推理",
-          "size": 157,
+          "size": 206,
           "example_paper_ids": [
             "fc1d508739de",
             "a51c369d9384",
@@ -128,37 +77,37 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 63,
+            "size": 83,
             "example_paper_ids": [
               "af8c55fc2338",
               "56d626d45cda",
+              "d86b1e6c17fb",
               "31317d0c8eb9",
-              "b0cb0b995a81",
               "c11be9e6b738"
             ]
           },
           "0": {
             "id": 0,
-            "label": "合成数据生成与指令调优",
-            "size": 18,
+            "label": "图聚类建模数据结构",
+            "size": 11,
             "example_paper_ids": [
               "de94191095a6",
               "1da25b777b31",
-              "807037447531",
-              "20a389792a1f",
-              "1cb9970fc6a7"
+              "1cb9970fc6a7",
+              "e1da6bd99ddb",
+              "7a66ddebc5bc"
             ]
           },
           "1": {
             "id": 1,
-            "label": "构建基准与临床思维图模型",
-            "size": 9,
+            "label": "构建基于真实临床数据与专家验证的多模态基准",
+            "size": 10,
             "example_paper_ids": [
+              "807037447531",
               "3f031141ca49",
-              "8f66504aa1f3",
-              "780f47da2d10",
-              "b5415a6ff44f",
-              "e95978cef606"
+              "fea47b68af29",
+              "9cb38039bb9b",
+              "8f66504aa1f3"
             ]
           }
         },
@@ -166,61 +115,37 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 113,
+            "size": 137,
             "example_paper_ids": [
               "fc1d508739de",
               "a51c369d9384",
+              "6e5bb5535c7d",
               "92a29cbb9f1d",
-              "20e5bf9a43e4",
-              "327d91ccf4bf"
+              "20e5bf9a43e4"
             ]
           },
           "0": {
             "id": 0,
-            "label": "评估不同预训练模型与校准技术",
-            "size": 9,
+            "label": "自注意力-交叉注意力编码器与特征自监督预训练",
+            "size": 51,
             "example_paper_ids": [
               "3ddd8b7d04ec",
-              "d86b1e6c17fb",
               "7ffecb2f6f94",
-              "7afd9c0e050c",
-              "68f7d81ba7ca"
+              "6365fd9f4b36",
+              "79feccfa7820",
+              "7df20a2d1505"
             ]
           },
           "1": {
             "id": 1,
-            "label": "可微分双层优化框架",
+            "label": "基于质心判别基的几何框架与贝叶斯优化",
             "size": 18,
             "example_paper_ids": [
-              "6e5bb5535c7d",
-              "6365fd9f4b36",
-              "b1a75193d68b",
-              "9679e0296393",
-              "752aa3614e80"
-            ]
-          },
-          "2": {
-            "id": 2,
-            "label": "多级知识图谱构建与检索增强生成",
-            "size": 7,
-            "example_paper_ids": [
               "6d06f6aa95d7",
-              "03cb08a55e50",
-              "8d6a80517e37",
-              "5f9681e52b1e",
-              "8dbf93d41bda"
-            ]
-          },
-          "3": {
-            "id": 3,
-            "label": "使用强化学习与可验证奖励训练",
-            "size": 10,
-            "example_paper_ids": [
               "84e0431c8053",
-              "bd803ee31367",
-              "4d8f95bee42d",
-              "875892ba1c4b",
-              "66e450919ad0"
+              "9d92d171b121",
+              "53b99b710e18",
+              "9f85d69ee73d"
             ]
           }
         }
@@ -230,38 +155,26 @@
       "l1": {
         "0": {
           "id": 0,
-          "label": "在多个数据集上实现精度与效率的优越权衡，参数量减少69%，计算量降低27%",
-          "size": 54,
+          "label": "减少预测误差，性能等同或优于仅用真实数据训练的模型",
+          "size": 198,
           "example_paper_ids": [
             "af8c55fc2338",
+            "1da25b777b31",
             "3ddd8b7d04ec",
-            "b0cb0b995a81",
-            "6d06f6aa95d7",
-            "c11be9e6b738"
-          ]
-        },
-        "2": {
-          "id": 2,
-          "label": "提升医学推理准确率，轻量模型匹配大型模型性能",
-          "size": 70,
-          "example_paper_ids": [
-            "56d626d45cda",
-            "fc1d508739de",
-            "a51c369d9384",
-            "807037447531",
-            "6365fd9f4b36"
+            "6e5bb5535c7d",
+            "92a29cbb9f1d"
           ]
         },
         "1": {
           "id": 1,
-          "label": "分割与检测性能提升",
-          "size": 123,
+          "label": "在多个医学数据集上提升准确性和推理能力",
+          "size": 112,
           "example_paper_ids": [
+            "56d626d45cda",
             "de94191095a6",
-            "1da25b777b31",
-            "6e5bb5535c7d",
-            "92a29cbb9f1d",
-            "20e5bf9a43e4"
+            "fc1d508739de",
+            "a51c369d9384",
+            "807037447531"
           ]
         }
       },
@@ -270,27 +183,37 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 54,
+            "size": 135,
             "example_paper_ids": [
               "af8c55fc2338",
               "3ddd8b7d04ec",
-              "b0cb0b995a81",
-              "6d06f6aa95d7",
-              "c11be9e6b738"
+              "6e5bb5535c7d",
+              "92a29cbb9f1d",
+              "31317d0c8eb9"
             ]
-          }
-        },
-        "2": {
-          "-1": {
-            "id": -1,
-            "label": "Other",
-            "size": 70,
+          },
+          "0": {
+            "id": 0,
+            "label": "降低平均校准误差，保持准确率",
+            "size": 40,
             "example_paper_ids": [
-              "56d626d45cda",
-              "fc1d508739de",
-              "a51c369d9384",
-              "807037447531",
-              "6365fd9f4b36"
+              "1da25b777b31",
+              "327d91ccf4bf",
+              "e558cce9cb84",
+              "e1304836cf3c",
+              "03cb08a55e50"
+            ]
+          },
+          "1": {
+            "id": 1,
+            "label": "性能优于现有方法",
+            "size": 23,
+            "example_paper_ids": [
+              "20e5bf9a43e4",
+              "1cb9970fc6a7",
+              "59636bebccc9",
+              "c6cd093fcdc4",
+              "c1954741a0e8"
             ]
           }
         },
@@ -298,37 +221,13 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 85,
+            "size": 112,
             "example_paper_ids": [
+              "56d626d45cda",
               "de94191095a6",
-              "6e5bb5535c7d",
-              "92a29cbb9f1d",
-              "d86b1e6c17fb",
-              "31317d0c8eb9"
-            ]
-          },
-          "0": {
-            "id": 0,
-            "label": "在合成和真实数据中表现优于现有方法",
-            "size": 8,
-            "example_paper_ids": [
-              "1da25b777b31",
-              "313e0d430f51",
-              "698c024528b8",
-              "24aa432dd6a5",
-              "d7eb4fd1756f"
-            ]
-          },
-          "1": {
-            "id": 1,
-            "label": "提升预测性能与解释质量",
-            "size": 30,
-            "example_paper_ids": [
-              "20e5bf9a43e4",
-              "327d91ccf4bf",
-              "e558cce9cb84",
-              "b1666a083690",
-              "03cb08a55e50"
+              "fc1d508739de",
+              "a51c369d9384",
+              "807037447531"
             ]
           }
         }
@@ -339,7 +238,7 @@
         "0": {
           "id": 0,
           "label": "增强医学模型模态对齐与事实准确性",
-          "size": 198,
+          "size": 232,
           "example_paper_ids": [
             "af8c55fc2338",
             "56d626d45cda",
@@ -351,7 +250,7 @@
         "1": {
           "id": 1,
           "label": "实现高效无手动提示的医学图像分割模型",
-          "size": 49,
+          "size": 78,
           "example_paper_ids": [
             "3ddd8b7d04ec",
             "20e5bf9a43e4",
@@ -366,7 +265,7 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 198,
+            "size": 232,
             "example_paper_ids": [
               "af8c55fc2338",
               "56d626d45cda",
@@ -380,7 +279,7 @@
           "-1": {
             "id": -1,
             "label": "Other",
-            "size": 49,
+            "size": 78,
             "example_paper_ids": [
               "3ddd8b7d04ec",
               "20e5bf9a43e4",

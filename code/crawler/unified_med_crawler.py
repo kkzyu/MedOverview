@@ -75,6 +75,10 @@ class CrawlConfig:
     proxy: Optional[str]
     proxy_pool: Optional[List[str]]
     proxy_index: int
+    rotate_proxy_every_pages: int
+    proxy_api_url: Optional[str]
+    proxy_api_token: Optional[str]
+    proxy_api_timeout_s: int
 
     deepseek_api_key: Optional[str]
     deepseek_base_url: str
@@ -113,13 +117,85 @@ def _apply_proxy(session: requests.Session, proxy_url: Optional[str]) -> None:
         session.proxies.update({"http": proxy_url, "https": proxy_url})
 
 
+def _normalize_proxy_url(raw: str) -> str:
+    s = (raw or "").strip()
+    if not s:
+        return s
+    # 允许用户只填 host:port
+    if not re.match(r"^https?://", s, flags=re.IGNORECASE):
+        s = "http://" + s
+    return s
+
+
+def _fetch_proxy_from_api(cfg: CrawlConfig) -> Optional[str]:
+    """从代理服务动态获取代理地址。
+
+    兼容两类返回：
+    1) 纯文本：直接返回 proxy 字符串（如 http://user:pass@host:port 或 host:port）
+    2) JSON：包含 proxy 字段（如 {"proxy": "host:port"} 或 {"data": {"proxy": "..."}}）
+
+    说明：
+    - 不会把 token 写入输出文件；仅用于请求头。
+    - 如需更复杂的供应商格式，可以在这里按需扩展解析逻辑。
+    """
+    if not cfg.proxy_api_url:
+        return None
+
+    headers: Dict[str, str] = {}
+    if cfg.proxy_api_token:
+        # 常见供应商用法：Authorization: Bearer <token>
+        headers["Authorization"] = f"Bearer {cfg.proxy_api_token}"
+
+    try:
+        resp = requests.get(cfg.proxy_api_url, headers=headers, timeout=cfg.proxy_api_timeout_s)
+        if resp.status_code != 200:
+            print(f"❌ 代理 API HTTP {resp.status_code}: {cfg.proxy_api_url}")
+            return None
+
+        content_type = (resp.headers.get("Content-Type") or "").lower()
+        text = (resp.text or "").strip()
+        if not text:
+            return None
+
+        if "application/json" in content_type or (text.startswith("{") and text.endswith("}")):
+            try:
+                data = resp.json()
+                if isinstance(data, dict):
+                    proxy = data.get("proxy")
+                    if not proxy and isinstance(data.get("data"), dict):
+                        proxy = data["data"].get("proxy")
+                    if isinstance(proxy, str) and proxy.strip():
+                        return _normalize_proxy_url(proxy)
+            except Exception:
+                return None
+            return None
+
+        return _normalize_proxy_url(text)
+    except requests.RequestException as e:
+        print(f"🌐 代理 API 请求异常: {e}")
+        return None
+
+
 def _rotate_proxy(session: requests.Session, cfg: CrawlConfig) -> None:
-    if not cfg.proxy_pool or len(cfg.proxy_pool) < 2:
+    # 优先：从代理 API 动态拉取
+    if cfg.proxy_api_url:
+        new_proxy = _fetch_proxy_from_api(cfg)
+        if new_proxy:
+            cfg.proxy = new_proxy
+            _apply_proxy(session, cfg.proxy)
+            return
+        # API 失败则回退到 proxy_pool（若存在）
+
+    if not cfg.proxy_pool:
         return
+    if len(cfg.proxy_pool) == 1:
+        cfg.proxy = _normalize_proxy_url(cfg.proxy_pool[0])
+        _apply_proxy(session, cfg.proxy)
+        return
+
     cfg.proxy_index = (cfg.proxy_index + 1) % len(cfg.proxy_pool)
-    cfg.proxy = cfg.proxy_pool[cfg.proxy_index]
+    cfg.proxy = _normalize_proxy_url(cfg.proxy_pool[cfg.proxy_index])
     _apply_proxy(session, cfg.proxy)
-    print(f"🔁  429 触发切换代理：{cfg.proxy}")
 
 
 def fetch_with_retry(
@@ -147,6 +223,8 @@ def fetch_with_retry(
 
             if resp.status_code == 429:
                 _rotate_proxy(session, cfg)
+                if cfg.proxy:
+                    print(f"🔁  429 触发切换代理：{cfg.proxy}")
                 retry_after = resp.headers.get("Retry-After")
                 retry_after_s: Optional[float] = None
                 if retry_after:
@@ -508,6 +586,23 @@ def finalize_json(jsonl_path: str, json_path: str) -> None:
 
 
 def crawl(cfg: CrawlConfig) -> None:
+    """统一抓取器（支持动态代理轮换）。
+
+    动态代理（每 N 页切换 IP）用法：
+
+    方式 A：代理池轮换（本地/自备多条代理）
+    - 传入多个代理：--proxy-list "http://h1:p1,http://h2:p2" 或 "h1:p1,h2:p2"（会自动补 http://）
+    - 设置轮换频率：--rotate-proxy-every-pages 5
+
+    方式 B：代理 API 动态获取（供应商按次下发）
+    - 传入代理 API：--proxy-api-url "https://provider.example.com/get"
+    - 如需 token：设置环境变量 PROXY_API_TOKEN 或传参 --proxy-api-token
+    - 设置轮换频率：--rotate-proxy-every-pages 5
+
+    注意：
+    - 本脚本使用 requests.Session 的 proxies；切换代理会影响后续所有请求。
+    - 仍保留 429 触发的被动切换：遇到限流也会尝试换 IP。
+    """
     session = _build_session(cfg)
 
     first = fetch_with_retry(
@@ -555,6 +650,14 @@ def crawl(cfg: CrawlConfig) -> None:
 
     # page loop: parse -> for each item, if main then detail+llm -> write immediately
     for page in range(cfg.start_page, effective_end + 1):
+        # 主动轮换：每爬取 N 页后，在下一页开始前切换 IP
+        if cfg.rotate_proxy_every_pages and page != cfg.start_page:
+            pages_done = page - cfg.start_page
+            if pages_done % cfg.rotate_proxy_every_pages == 0:
+                _rotate_proxy(session, cfg)
+                if cfg.proxy:
+                    print(f"🔁  主动切换代理（每 {cfg.rotate_proxy_every_pages} 页）：{cfg.proxy}")
+
         if page == cfg.start_page:
             resp = first
         else:
@@ -621,10 +724,10 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description="Unified crawler for ICML/ICLR/NeurIPS medical-related papers")
     p.add_argument("--venue", required=True, choices=sorted(VENUES.keys()), help="icml | iclr | neurips")
     p.add_argument("--query", default=None, help="搜索词（默认：icml=Med, iclr/neurips=medical）")
-    p.add_argument("--years", default="2024,2025", help="目标年份，默认 2024,2025")
+    p.add_argument("--years", default="2024,2025,2026", help="目标年份，默认 2024,2025")
     p.add_argument("--start-page", type=int, default=50)
     p.add_argument("--end-page", type=int, default=None)
-    p.add_argument("--max-pages", type=int, default=100, help="从 start-page 起最多抓多少页（便于测试）")
+    p.add_argument("--max-pages", type=int, default=50, help="从 start-page 起最多抓多少页（便于测试）")
 
     p.add_argument("--delay-min", type=float, default=4.0)
     p.add_argument("--delay-max", type=float, default=8.0)
@@ -638,6 +741,24 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--proxy-list", default=None, help="多个代理（逗号分隔），例如 host1:port,host2:port")
     p.add_argument("--proxy-user", default=None, help="代理用户名（可选，和 --proxy-pass 一起用）")
     p.add_argument("--proxy-pass", default=None, help="代理密码（可选，和 --proxy-user 一起用）")
+
+    p.add_argument(
+        "--rotate-proxy-every-pages",
+        type=int,
+        default=5,
+        help="每爬取多少页主动切换一次代理（默认 5；为 0 表示关闭主动轮换）",
+    )
+    p.add_argument(
+        "--proxy-api-url",
+        default=None,
+        help="动态代理 API（返回 proxy 文本或 JSON，示例：https://provider.example.com/get）",
+    )
+    p.add_argument(
+        "--proxy-api-token",
+        default=None,
+        help="代理 API token（也可用环境变量 PROXY_API_TOKEN；不要把 token 写进代码/仓库）",
+    )
+    p.add_argument("--proxy-api-timeout", type=int, default=10, help="代理 API 超时秒数（默认 10）")
 
     p.add_argument(
         "--deepseek-api-key",
@@ -669,6 +790,7 @@ def main() -> None:
 
     deepseek_api_key = args.deepseek_api_key or os.getenv("DEEPSEEK_API_KEY")
     deepseek_base_url = args.deepseek_base_url or os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+    proxy_api_token = args.proxy_api_token or os.getenv("PROXY_API_TOKEN")
 
 
     # 动态拼接代理URL（优先级：user+pass > proxy/proxy-list）
@@ -701,7 +823,7 @@ def main() -> None:
     elif args.proxy:
         proxy_pool = [args.proxy]
 
-    proxy_url = proxy_pool[0] if proxy_pool else None
+    proxy_url = _normalize_proxy_url(proxy_pool[0]) if proxy_pool else None
 
     cfg = CrawlConfig(
         venue=venue,
@@ -721,6 +843,10 @@ def main() -> None:
         proxy=proxy_url,
         proxy_pool=proxy_pool,
         proxy_index=0,
+        rotate_proxy_every_pages=max(0, int(args.rotate_proxy_every_pages)),
+        proxy_api_url=args.proxy_api_url,
+        proxy_api_token=proxy_api_token,
+        proxy_api_timeout_s=args.proxy_api_timeout,
         deepseek_api_key=deepseek_api_key,
         deepseek_base_url=deepseek_base_url,
         deepseek_model=args.deepseek_model,
@@ -728,6 +854,13 @@ def main() -> None:
         out_prefix=args.out_prefix,
         finalize_json=not args.no_finalize_json,
     )
+
+    # 如果用户配置了 proxy_pool，则把池内也规范化（允许写 host:port）
+    if cfg.proxy_pool:
+        cfg.proxy_pool = [_normalize_proxy_url(p) for p in cfg.proxy_pool if p and str(p).strip()]
+        if cfg.proxy_pool:
+            cfg.proxy = cfg.proxy or cfg.proxy_pool[0]
+            _apply_proxy(_build_session(cfg), cfg.proxy)
 
     crawl(cfg)
 

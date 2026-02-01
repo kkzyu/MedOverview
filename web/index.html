@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="title">Medical 2024-2025 · ICLR/ICML/NeurIPS</div>
+      <div class="title">Medical 2024-2026 · ICLR/ICML/NeurIPS</div>
     </header>
 
     <div class="toolbar">
@@ -24,6 +24,17 @@
       <button id="collapse1" class="btn btn-small" title="收起列2展开">列2回退</button>
       <button id="collapse2" class="btn btn-small" title="收起列3展开">列3回退</button>
       <button id="reset" class="btn">重置展开</button>
+
+      <div class="year-filter" title="按年份过滤关系/细节/问答检索范围">
+        <span class="year-label">年份</span>
+        <select id="yearFilter" class="year-select" aria-label="年份筛选"></select>
+      </div>
+
+      <div class="year-filter" title="按会议过滤关系/细节/问答检索范围">
+        <span class="year-label">会议</span>
+        <select id="venueFilter" class="year-select" aria-label="会议筛选"></select>
+      </div>
+
       <div class="spacer"></div>
       <input id="search" class="search" placeholder="在当前论文列表中搜索标题/关键词" />
     </div>

@@ -4,31 +4,31 @@
       "id": "Screening",
       "label": "Screening",
       "desc": "Population screening, early detection, triage-like screening in non-clinical settings",
-      "size": 5
+      "size": 9
     },
     "Diagnosis": {
       "id": "Diagnosis",
       "label": "Diagnosis",
       "desc": "Clinical diagnosis and differential diagnosis; supporting clinician decision-making",
-      "size": 66
+      "size": 88
     },
     "Triage": {
       "id": "Triage",
       "label": "Triage",
       "desc": "Prioritization and routing: urgency, referral, escalation, resource allocation",
-      "size": 1
+      "size": 2
     },
     "Treatment": {
       "id": "Treatment",
       "label": "Treatment",
       "desc": "Treatment selection, planning, personalization, dosing, and therapy optimization",
-      "size": 16
+      "size": 18
     },
     "Monitoring": {
       "id": "Monitoring",
       "label": "Monitoring",
       "desc": "Continuous monitoring, follow-up, ICU/ward monitoring, wearable sensing",
-      "size": 14
+      "size": 16
     },
     "Prognosis": {
       "id": "Prognosis",
@@ -46,31 +46,31 @@
       "id": "Workflow",
       "label": "Workflow",
       "desc": "Clinical operations: documentation, scheduling, coding, reporting, quality improvement",
-      "size": 52
+      "size": 66
     },
     "DrugDiscovery": {
       "id": "DrugDiscovery",
       "label": "DrugDiscovery",
       "desc": "Drug discovery, molecule generation, target identification; pre-clinical",
-      "size": 4
+      "size": 5
     },
     "ImagingPipeline": {
       "id": "ImagingPipeline",
       "label": "ImagingPipeline",
       "desc": "Imaging pipeline stage: acquisition, reconstruction, detection, segmentation, reporting",
-      "size": 115
+      "size": 161
     },
     "DataInfra": {
       "id": "DataInfra",
       "label": "DataInfra",
       "desc": "Data standardization, privacy, evaluation, benchmarking, foundation models for medical data",
-      "size": 139
+      "size": 179
     },
     "Other": {
       "id": "Other",
       "label": "Other",
       "desc": "Does not fit above stages",
-      "size": 3
+      "size": 9
     }
   },
   "l2": {
@@ -78,12 +78,12 @@
       "Risk screening": {
         "id": "Risk screening",
         "label": "Risk screening",
-        "size": 0
+        "size": 3
       },
       "Early detection": {
         "id": "Early detection",
         "label": "Early detection",
-        "size": 5
+        "size": 7
       },
       "Public screening workflow": {
         "id": "Public screening workflow",
@@ -95,34 +95,34 @@
       "Symptom assessment": {
         "id": "Symptom assessment",
         "label": "Symptom assessment",
-        "size": 0
+        "size": 3
       },
       "Differential diagnosis": {
         "id": "Differential diagnosis",
         "label": "Differential diagnosis",
-        "size": 0
+        "size": 1
       },
       "Decision support": {
         "id": "Decision support",
         "label": "Decision support",
-        "size": 53
+        "size": 72
       },
       "Clinical QA": {
         "id": "Clinical QA",
         "label": "Clinical QA",
-        "size": 16
+        "size": 20
       }
     },
     "Triage": {
       "Severity scoring": {
         "id": "Severity scoring",
         "label": "Severity scoring",
-        "size": 0
+        "size": 1
       },
       "Referral routing": {
         "id": "Referral routing",
         "label": "Referral routing",
-        "size": 0
+        "size": 1
       },
       "Emergency triage": {
         "id": "Emergency triage",
@@ -144,7 +144,7 @@
       "Treatment planning": {
         "id": "Treatment planning",
         "label": "Treatment planning",
-        "size": 3
+        "size": 5
       },
       "Personalized treatment": {
         "id": "Personalized treatment",
@@ -161,12 +161,12 @@
       "ICU monitoring": {
         "id": "ICU monitoring",
         "label": "ICU monitoring",
-        "size": 5
+        "size": 4
       },
       "Chronic follow-up": {
         "id": "Chronic follow-up",
         "label": "Chronic follow-up",
-        "size": 5
+        "size": 8
       },
       "Remote monitoring": {
         "id": "Remote monitoring",
@@ -183,7 +183,7 @@
       "Survival / time-to-event": {
         "id": "Survival / time-to-event",
         "label": "Survival / time-to-event",
-        "size": 8
+        "size": 7
       },
       "Complication risk": {
         "id": "Complication risk",
@@ -193,12 +193,12 @@
       "Disease progression": {
         "id": "Disease progression",
         "label": "Disease progression",
-        "size": 4
+        "size": 5
       },
       "Readmission risk": {
         "id": "Readmission risk",
         "label": "Readmission risk",
-        "size": 4
+        "size": 3
       }
     },
     "Rehabilitation": {
@@ -222,12 +222,12 @@
       "Clinical documentation": {
         "id": "Clinical documentation",
         "label": "Clinical documentation",
-        "size": 38
+        "size": 47
       },
       "Medical coding": {
         "id": "Medical coding",
         "label": "Medical coding",
-        "size": 2
+        "size": 3
       },
       "Reporting": {
         "id": "Reporting",
@@ -237,7 +237,7 @@
       "Quality & safety": {
         "id": "Quality & safety",
         "label": "Quality & safety",
-        "size": 12
+        "size": 17
       }
     },
     "DrugDiscovery": {
@@ -254,7 +254,7 @@
       "Drug response": {
         "id": "Drug response",
         "label": "Drug response",
-        "size": 1
+        "size": 2
       },
       "Biomarker discovery": {
         "id": "Biomarker discovery",
@@ -266,27 +266,27 @@
       "Reconstruction": {
         "id": "Reconstruction",
         "label": "Reconstruction",
-        "size": 5
+        "size": 16
       },
       "Detection": {
         "id": "Detection",
         "label": "Detection",
-        "size": 34
+        "size": 46
       },
       "Segmentation": {
         "id": "Segmentation",
         "label": "Segmentation",
-        "size": 44
+        "size": 61
       },
       "Report generation": {
         "id": "Report generation",
         "label": "Report generation",
-        "size": 35
+        "size": 44
       },
       "VQA": {
         "id": "VQA",
         "label": "VQA",
-        "size": 20
+        "size": 31
       }
     },
     "DataInfra": {
@@ -298,24 +298,24 @@
       "Privacy": {
         "id": "Privacy",
         "label": "Privacy",
-        "size": 15
+        "size": 16
       },
       "Benchmark / evaluation": {
         "id": "Benchmark / evaluation",
         "label": "Benchmark / evaluation",
-        "size": 102
+        "size": 134
       },
       "Foundation models": {
         "id": "Foundation models",
         "label": "Foundation models",
-        "size": 32
+        "size": 39
       }
     },
     "Other": {
       "Other": {
         "id": "Other",
         "label": "Other",
-        "size": 3
+        "size": 9
       }
     }
   }

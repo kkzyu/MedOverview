@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -86,6 +87,22 @@ def main() -> None:
         help="Process only first N papers (0 means all)",
     )
     parser.add_argument(
+        "--year",
+        type=int,
+        default=0,
+        help="Only label papers of this year (0 means all)",
+    )
+    parser.add_argument(
+        "--venue",
+        default="",
+        help="Only label papers whose venue contains this substring (case-insensitive). Empty means all.",
+    )
+    parser.add_argument(
+        "--deepseek-api-key",
+        default="",
+        help="DeepSeek API Key (preferred: set env DEEPSEEK_API_KEY; avoid committing keys)",
+    )
+    parser.add_argument(
         "--overwrite",
         action="store_true",
         help="Overwrite existing stage labels if present",
@@ -100,6 +117,10 @@ def main() -> None:
     papers = load_json(papers_path)
     labels = load_json(labels_path)
     taxonomy = load_json(taxonomy_path)
+
+    # Allow passing key via CLI for convenience (still supports .env / env vars).
+    if isinstance(args.deepseek_api_key, str) and args.deepseek_api_key.strip():
+        os.environ["DEEPSEEK_API_KEY"] = args.deepseek_api_key.strip()
 
     client = DeepSeekClient.from_env()
 
@@ -120,7 +141,25 @@ def main() -> None:
     )
 
     processed = 0
+    venue_sub = str(args.venue or "").strip().lower()
+    year_only = int(args.year or 0)
+
+    def paper_selected(p: dict[str, Any]) -> bool:
+        if year_only:
+            try:
+                if int(p.get("year") or 0) != year_only:
+                    return False
+            except Exception:
+                return False
+        if venue_sub:
+            v = str(p.get("venue") or "").lower()
+            if venue_sub not in v:
+                return False
+        return True
+
     for p in papers[: (args.limit or None)]:
+        if not paper_selected(p):
+            continue
         pid = p["id"]
         if (not args.overwrite) and labels.get(pid, {}).get("stage"):
             continue
