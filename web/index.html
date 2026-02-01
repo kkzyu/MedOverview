@@ -3,13 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedOverview</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <section class="panel">
+      <div class="title">Medical 2024-2025 · ICLR/ICML/NeurIPS</div>
+    </header>
+
+    <div class="toolbar">
+      <div class="fixed-cols" aria-label="固定三列">
+        <div class="fixed-col"><span class="fixed-k">列1</span><span class="pill" id="col0label">stage</span></div>
+        <div class="fixed-col"><span class="fixed-k">列2</span><span class="pill" id="col1label">method</span></div>
+        <div class="fixed-col"><span class="fixed-k">列3</span><span class="pill" id="col2label">result</span></div>
+      </div>
+      <div class="divider"></div>
+
+      <button id="collapse0" class="btn btn-small" title="收起列1展开">列1回退</button>
+      <button id="collapse1" class="btn btn-small" title="收起列2展开">列2回退</button>
+      <button id="collapse2" class="btn btn-small" title="收起列3展开">列3回退</button>
+      <button id="reset" class="btn">重置展开</button>
+      <div class="spacer"></div>
+      <input id="search" class="search" placeholder="在当前论文列表中搜索标题/关键词" />
+    </div>
+
+    <main class="layout" aria-label="主视图">
+      <section class="panel" aria-label="关系视图">
         <div class="panel-title">关系视图</div>
+        <div id="chart" class="chart"></div>
+      </section>
+
+      <section class="panel" aria-label="细节视图">
+        <div class="panel-title">细节视图</div>
+        <div id="detailsHint" class="details-hint"></div>
+        <div id="details" class="details"></div>
+      </section>
+    </main>
 
     <section class="qa-panel" aria-label="问答（RAG）">
       <div class="panel-title">问答（RAG）</div>
@@ -38,46 +68,9 @@
         <div id="ragCitations" class="qa-citations"></div>
       </div>
     </section>
-        <div id="chart" class="chart"></div>
-        <div id="hint" class="hint"></div>
-      </section>
-      <section class="panel">
-        <div class="panel-title">细节视图</div>
-        <div id="detailsHint" class="details-hint"></div>
-        <div id="details" class="details"></div>
-
-        <div class="qa" aria-label="问答">
-          <div class="qa-title">问答</div>
-
-          <div class="qa-row">
-            <input id="ragKey" class="qa-input" type="password" placeholder="DeepSeek API Key（仅保存在浏览器，可选）" />
-            <button id="ragSaveKey" class="btn btn-small">记住</button>
-            <button id="ragClearKey" class="btn btn-small">清除</button>
-          </div>
-
-          <div class="qa-row">
-            <input id="ragQuestion" class="qa-input" placeholder="对当前筛选论文提问（例如：这个方向常见方法路线是什么？）" />
-            <button id="ragAsk" class="btn">Ask</button>
-          </div>
-
-          <div class="qa-row qa-row-tight">
-            <label class="qa-radio"><input type="radio" name="ragStyle" value="overview" checked /> 综述型</label>
-            <label class="qa-radio"><input type="radio" name="ragStyle" value="cite" /> 精确引用型</label>
-            <span id="ragScope" class="muted"></span>
-          </div>
-
-          <div id="ragPresets" class="qa-presets"></div>
-
-          <div id="ragStatus" class="qa-status muted"></div>
-          <div id="ragAnswer" class="qa-answer"></div>
-          <div id="ragCitations" class="qa-citations"></div>
-        </div>
-      </section>
-    </main>
 
     <footer class="footer">
       <div id="footerCounts" class="footer-text"></div>
-      <!-- <div class="footer-text muted">提示：双击 L1 节点进入子主题；点击“列X回退”返回上一级；点击节点/连线可过滤右侧论文列表。</div> -->
     </footer>
 
     <script type="module" src="./app.js"></script>

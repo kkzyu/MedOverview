@@ -5,6 +5,7 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   background: #f6f8fb;
   color: #111827;
+  min-height: 100vh;
 }
 
 .header {
@@ -72,7 +73,6 @@ select {
 }
 
 .btn {
-  margin-top: 18px;
   padding: 9px 12px;
   border-radius: 10px;
   border: 1px solid rgba(17,24,39,0.12);
@@ -84,7 +84,6 @@ select {
 .btn:hover { background: rgba(59,130,246,0.08); }
 
 .btn-small {
-  margin-top: 18px;
   padding: 9px 10px;
 }
 
@@ -99,7 +98,6 @@ select {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 18px;
 }
 
 .toggle-label {
@@ -146,7 +144,8 @@ select {
   grid-template-columns: 7fr 3fr;
   gap: 12px;
   padding: 16px;
-  height: calc(100vh - 118px);
+  /* Taller than one viewport if needed, but still constrained so panels can scroll internally. */
+  height: max(600px, calc(100vh - 160px));
   min-height: 0;
 }
 
@@ -244,6 +243,7 @@ select {
   border-top: 1px solid rgba(17,24,39,0.10);
   background: rgba(255,255,255,0.65);
   backdrop-filter: blur(8px);
+  flex: 0 0 auto;
 }
 
 /* ===== QA full-width panel ===== */
@@ -253,6 +253,15 @@ select {
   border-radius: 14px;
   background: #ffffff;
   overflow: hidden;
+  flex: 0 0 auto;
+  max-height: 34vh;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-panel .qa {
+  overflow: auto;
 }
 
 .qa {
@@ -284,6 +293,11 @@ select {
   gap: 8px;
   align-items: center;
   margin-bottom: 8px;
+}
+
+.qa .btn,
+.qa .btn-small {
+  margin-top: 0;
 }
 
 .qa-row-tight {

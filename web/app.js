@@ -492,7 +492,8 @@ async function main() {
   let expanded = { 0: null, 1: null, 2: null };
   let currentPaperIds = papers.map((p) => p.id);
   let currentContextText = "全量";
-  let viewMode = "dict"; // 'original' | 'dict'
+  // Always show dictionary-mapped labels when mapping exists.
+  let viewMode = dictMap ? "dict" : "original"; // 'original' | 'dict'
 
   // ===== RAG UI =====
   const ragKey = document.getElementById("ragKey");
@@ -713,18 +714,7 @@ async function main() {
   loadSavedKey();
   updateRagScope();
 
-  const toggle = document.getElementById("toggleDict");
-  const toggleWrap = document.getElementById("dictToggleWrap");
-  if (!dictMap) {
-    // hide toggle if mapping not present
-    if (toggleWrap) toggleWrap.style.display = "none";
-  } else if (toggle) {
-    toggle.checked = false;
-    toggle.addEventListener("change", () => {
-      viewMode = toggle.checked ? "dict" : "original";
-      rerender();
-    });
-  }
+  // (No UI toggle) viewMode is decided by presence of dictMap.
 
   function focusText() {
     const parts = [];
@@ -905,7 +895,10 @@ async function main() {
     renderDetails({ paperIndex, paperIds: currentPaperIds, searchTerm: byId("search").value });
   });
 
-  hint.textContent = "渲染中…";
+  {
+    const detailsHint = document.getElementById("detailsHint");
+    if (detailsHint) detailsHint.textContent = "渲染中…";
+  }
   rerender();
 }
 
